@@ -10,14 +10,14 @@
 
 ##构建流程
 
-1. 获取工程代码 :`git clone https://github.com/QuanCong/DataCenter.git `	
-2. `cd DataCenter/data` 执行sql语句还原数据库
-3. 构建数据中心子系统工程代码
+- 获取工程代码 :`git clone https://github.com/QuanCong/DataCenter.git `	
+-  `cd DataCenter/data` 执行sql语句还原数据库
+- 构建数据中心子系统工程代码
 ```
    cd DataCenter/DeployApp_V2
    mvn package
 ```
-4. 修改配置文件参数
+- 修改配置文件参数
 ```
 cd DataCenter/DeployApp_V2/conf
 修改server.properties
@@ -28,13 +28,13 @@ mc.servers=172.27.48.230:50120 #memcached地址
 log4j.appender.db.URL=jdbc:mysql://172.27.48.230:3306/test?useUnicode=true&characterEncoding=UTF-8 #修改数据库地址
 ```
 
-5. 启动数据中心：
+- 启动数据中心：
 ```
 cd DataCenter/DeployApp_V2/target
 java -jar DDC-1.0-SNAPSHOT.jar E:/conf/deploy_app/
 ```
-6. 修改数据中心管理系统配置，修改memcached.xml和spring-dao-context.xml 修改其中memcached和mysql的地址
-7. 部署tomcat启动
+- 修改数据中心管理系统配置，修改memcached.xml和spring-dao-context.xml 修改其中memcached和mysql的地址
+- 部署tomcat启动
 
 ##数据中心命令行操作
 启动数据中心子系统以后，可以通过命令行交互的形式修改一些参数
@@ -43,7 +43,6 @@ java -jar DDC-1.0-SNAPSHOT.jar E:/conf/deploy_app/
 * start 启动数据中心
 * stop  关闭数据中心
 * exit  退出系统
-* 
 
 
 
