@@ -1,0 +1,251 @@
+<style>
+    #status_text {
+        margin-top: 20px;
+    }
+
+    .speed {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+</style>
+
+
+<section class="content">
+    <!-- 第一行 -->
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <div class="box box-primary direct-chat direct-chat-primary">
+                <div class="box-header with-border">
+                    <i class="fa  fa-info-circle"></i>
+                    <h3 class="box-title">基本信息</h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div id="info" class="box-body">
+                    <ul class="bring-up">
+                        <li><strong>主机名：</strong> <label>{{server.hostIP}}</label></li>
+                        <li><strong>端口号：</strong> <label>{{server.port}}</label></li>
+                        <li><strong>内核版本：</strong> <label>DTUCENTER 3.0</label></li>
+                        <li><strong>服务器版本：</strong><label>CENTOS 6.5</label></li>
+                        <li><strong>最大连接数：</strong> <label>{{server.maxConnections}}</label></li>
+                        <li><strong>DTU最大连接数：</strong><label>{{server.maxDtuConnections}}</label></li>
+                        <li><strong>Client最大连接数：</strong><label>{{server.maxClientConnections}}</label></li>
+                        <li><strong>接收队列深度：</strong> <label>{{server.receiveQueueLength}}</label></li>
+                        <li><strong>发送队列深度：</strong> <label>{{server.sendQueueLength}}</label></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="box box-success direct-chat direct-chat-primary">
+                <div class="box-header with-border">
+                    <i class="fa  fa-hourglass-start"></i>
+                    <h3 class="box-title">运行状态</h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body" style="display: block;">
+                    <div id="status_bg" class="info-box bg-green">
+                        <span class="info-box-icon">
+                            <i id="status_ic" ng-class="fa-stop"
+                               style="cursor: pointer" ng-click="operate()"></i>
+                        </span>
+
+                        <div class="info-box-content">
+                            <span id="status_text" class="info-box-number">已停止</span>
+                            <span id="status_time" class="info-box-number"><label id="time_Day">0</label>天
+											<label id="time_Hour">0</label>小时 <label id="time_Minute">0</label>分钟
+											<label id="time_Second">0</label>秒</li></span>
+                        </div>
+                        <input id='timeStart' type='hidden' text=''/>
+                        <input id='stautsHidden' type='hidden' text=''/>
+                        <!-- /.info-box-content -->
+                    </div>
+
+                    <div class="progress-group">
+                        <span class="progress-text">DTU连接数量</span>
+                        <span class="progress-number"><b id="count_dtu">160</b></span>
+                        <div class="progress sm">
+                            <div class="progress-bar progress-bar-yellow" style="width: 30%"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-group">
+                        <span class="progress-text">Client连接数量</span>
+                        <span class="progress-number"><b id="count_client">160</b></span>
+                        <div class="progress sm">
+                            <div class="progress-bar progress-bar-aqua" style="width: 50%"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!-- /第一行 -->
+
+    <!-- 第二行 -->
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="box box-info direct-chat direct-chat-primary">
+                <div class="box-header with-border">
+                    <i class="fa  fa-area-chart"></i>
+                    <h3 class="box-title">传输速率</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body" style="display: block;">
+                    <strong class="speed">接收速率</strong> <label id="rSpeed">0.0</label><label>KB/S</label><br>
+                    <strong class="speed">发送速率</strong> <label id="sSpeed">0.0</label><label>KB/S</label><br>
+                    <hr>
+                    <div id="realtimechart" style="height: 190px;"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box box-warning direct-chat direct-chat-primary">
+                <div class="box-header with-border">
+                    <i class="fa  fa-area-chart"></i>
+                    <h3 class="box-title">内存使用情况</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body" style="display: block;">
+                    <div id="realtimechartMem" style="height: 280px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box box-danger direct-chat direct-chat-primary">
+                <div class="box-header with-border">
+                    <i class="fa  fa-area-chart"></i>
+                    <h3 class="box-title">CPU使用情况</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body" style="display: block;">
+                    <div id="realtimechartCPU" style="height: 280px;"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!-- /第二行 -->
+
+    <!-- 第三行 -->
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="box box-primary direct-chat direct-chat-primary">
+                <div class="box-header with-border">
+                    <i class="fa fa-sticky-note-o"></i>
+                    <h3 class="box-title">日志</h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+
+                    <table id="logLastTenTable"
+                           class="table table-bordered table-striped table-condensed">
+                        <thead>
+                        <tr>
+                            <th>时间</th>
+                            <th>等级</th>
+                            <th>内容</th>
+                        </tr>
+                        </thead>
+                        <tbody id="logLastTenTable_body">
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- /第一行 -->
+
+
+</section>
+
+
+<!--indexPage-->
+
+<!-- webSocket逻辑 -->
+<script src="resource/indexPage/websocketInit.js"></script>
+<!--图表-->
+<script src="resource/common/js/jquery.flot.js"></script>
+<script src="resource/indexPage/init-chart.js"></script>
+<!--页面函数-->
+<script src="resource/indexPage/serverControl.js"></script>
+<script src="resource/common/service/indexService.js"></script>
+<!-- 开启计算时间差线程 -->
+<script type="text/javascript">
+    setInterval("displayRunTime()", 1000);
+</script>
+<!--EndIndexPage-->
+
+

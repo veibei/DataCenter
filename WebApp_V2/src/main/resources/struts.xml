@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 指定Struts 2配置文件的DTD信息 -->
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 配置了系列常量 -->
+	<constant name="struts.i18n.encoding" value="GBK"/>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<!-- 配置webSocket url 不被struts拦截 -->
+	<constant name="struts.action.excludePattern" value="/ws_server"></constant>
+    <package name="/" extends="struts-default">
+	
+	
+	
+	<!-- 登录action -->
+	<action name="accessAction" class="loginAction" method="login">
+		<result name="success" type="redirectAction">loginAction</result>
+		<result name="error">login.jsp?datatype=2</result>
+	</action>
+	<!-- index跳转 -->
+	<action name="loginAction" class="loginAction" method="indexPage">
+		<result name="success">/WEB-INF/index.html</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	
+	</action>
+	<!-- 退出登录 -->
+	<action name="logOutAction" class="loginAction" method="logout">
+		<result name="success">login.jsp?datatype=3</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+	<!-- 用户页面 -->
+	<action name="userPageAction" class="userPageAction" method="firstLoad">
+		<result name="success">/WEB-INF/loginip.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+	<action name="userSubPage" class="userPageAction" method="indexPage">
+		<result name="success">/WEB-INF/loginip.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	
+	</action>
+	
+	<action name="userPageChangeAction" class="userPageAction" method="changePerPageCount">
+		<result name="success">/WEB-INF/loginip.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+		
+	<action name="startServerAction" class="serverControl" method="start">
+		<!-- <result name="success">/WEB-INF/index.jsp</result> -->
+		<result name="error">/WEB-INF/error.jsp</result>
+	
+	</action>
+	
+	
+	<action name="stopServerAction" class="serverControl" method="stop">
+	<!-- 	<result name="success">/WEB-INF/index.jsp</result> -->
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+	
+	<!-- 日志页面 -->
+	<action name="logAction" class="logAction" method="firstLoad">
+		<result name="success">/WEB-INF/log.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	
+	</action>
+	<action name="logSubPage" class="logAction" method="indexPage">
+		<result name="success">/WEB-INF/log.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	
+	</action>
+	
+	<action name="logPageAction" class="logAction" method="changePerPageCount">
+		<result name="success">/WEB-INF/log.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+	<!-- dtu页面 -->
+	<action name="dtuAction" class="dtuAction" method="firstLoad">
+		<result name="success">/WEB-INF/dtu.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+	<action name="dtuSubPage" class="dtuAction" method="indexPage">
+		<result name="success">/WEB-INF/dtu.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+	<action name="dtuPageAction" class="dtuAction" method="changePerPageCount">
+		<result name="success">/WEB-INF/dtu.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+	<!-- client页面 -->
+	<action name="clientAction" class="clientAction" method="firstLoad">
+		<result name="success">/WEB-INF/client.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+	<action name="clientSubPage" class="clientAction" method="indexPage">
+		<result name="success">/WEB-INF/client.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+	<action name="clientPageAction" class="clientAction" method="changePerPageCount">
+		<result name="success">/WEB-INF/client.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+	
+	<!-- 流量监控 -->
+	<action name="rateAction" class="rateAction">
+		<result name="success">/WEB-INF/rate.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+	<!-- 流量透视 -->
+	<action name="rateAnalysisAction" class="rateAnalysisAction" method="execute">
+		<result name="success">/WEB-INF/rateAnalysis.jsp</result>
+		<result name="error">/WEB-INF/error.jsp</result>
+	</action>
+	
+	</package>
+	
+	<package name="json" extends="json-default">
+		<action name="rataAnalysisAction" class="rateAnalysisAction" method="getRAData">
+			<result type="json">
+				<param name="noCache">true</param>
+				<param name="contentType">text/html</param>
+			</result>	
+		</action>
+	</package>
+
+
+</struts>

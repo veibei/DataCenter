@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 将多个配置文件位置放到列表中 -->
+    <bean id="propertyResources" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <!-- 这里支持多种寻址方式：classpath和file -->
+                <value>file:E:/conf/deploy_app/server.properties</value>
+                <value>file:E:/conf/deploy_app/remote.properties</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <!-- 将配置文件读取到容器中，交给Spring管理 -->
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations" ref="propertyResources" />
+        <property name="fileEncoding" value="UTF-8"/>
+    </bean>
+    <import resource="file:E:/conf/deploy_app/ioacceptor.xml"/>
+    <import resource="file:E:/conf/deploy_app/remoteControl.xml"/>
+    <import resource="file:E:/conf/deploy_app/server.xml"/>
+    <import resource="file:E:/conf/deploy_app/alimc.xml"/>
+</beans>

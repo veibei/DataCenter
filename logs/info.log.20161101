@@ -1,0 +1,51 @@
+2016-11-01 08:59:08 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Tue Nov 01 08:59:08 CST 2016]; root of context hierarchy
+2016-11-01 08:59:08 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-11-01 08:59:08 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-11-01 08:59:09 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-11-01 08:59:09 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-11-01 08:59:09 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-11-01 08:59:09 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-11-01 08:59:09 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-11-01 08:59:09 [INFO] remote control established
+2016-11-01 08:59:09 [WARN] 未提供Cluster配置信息
+2016-11-01 08:59:09 [INFO]  add socketpool :pool0
+2016-11-01 08:59:09 [INFO] DefaultCache CheckService is start!
+2016-11-01 08:59:09 [INFO] DefaultCache CheckService is start!
+2016-11-01 08:59:09 [INFO]  add memcachedClient :mcClient
+2016-11-01 08:59:09 [INFO] server loading...
+2016-11-01 08:59:09 [INFO] socket service established:172.27.62.116:50116
+2016-11-01 08:59:09 [INFO] temp pool established
+2016-11-01 08:59:09 [INFO] client pool established
+2016-11-01 08:59:09 [INFO] DTU pool established
+2016-11-01 08:59:09 [INFO] receive queue established with length:100
+2016-11-01 08:59:09 [INFO] send queue established with length :100
+2016-11-01 08:59:09 [INFO] client thread pool established
+2016-11-01 08:59:09 [INFO] server receive msg switcher:true
+2016-11-01 08:59:09 [INFO] server send msg switcher:true
+2016-11-01 08:59:09 [INFO] server connction switcher:true
+2016-11-01 08:59:09 [INFO] receive queue established
+2016-11-01 08:59:09 [INFO] send queue established
+2016-11-01 08:59:09 [INFO] check queue established
+2016-11-01 08:59:09 [INFO] status check thread established
+2016-11-01 08:59:09 [INFO] status upload thread established
+2016-11-01 08:59:09 [INFO] rate data thread established
+2016-11-01 11:42:43 [INFO] remote control connetion established:172.27.62.116:47854
+2016-11-01 11:42:43 [INFO] admin@127.0.0.1request start server
+2016-11-01 11:42:43 [INFO] server starting
+2016-11-01 11:42:44 [INFO] receive queue started...
+2016-11-01 11:42:44 [INFO] status upload thread startedThread[pool-6-thread-5,5,main]
+2016-11-01 11:42:44 [INFO] rate data upload thread started:Thread[pool-6-thread-6,5,main]
+2016-11-01 11:42:44 [INFO] send queue thread started:Thread[pool-6-thread-2,5,main]
+2016-11-01 11:42:44 [INFO] DC status monitor startedThread[pool-6-thread-4,5,main]
+2016-11-01 11:42:44 [INFO] check queue deamon thread started: Thread[pool-6-thread-3,5,main]
+2016-11-01 11:42:44 [INFO] server started
+2016-11-01 11:42:44 [INFO] remote control thread stopped Thread[pool-7-thread-1,5,main]
+2016-11-01 12:54:46 [INFO] stopping service
+2016-11-01 12:54:46 [INFO] receice queue stopped...
+2016-11-01 12:54:46 [INFO] service stopped
+2016-11-01 12:54:46 [INFO] send queue thread stopped
+2016-11-01 12:54:46 [INFO] Data Center stop from console
+2016-11-01 12:54:46 [INFO] check queue deamon thread stopped Thread[pool-6-thread-3,5,main]
+2016-11-01 12:54:46 [INFO] status upload thread stopped Thread[pool-6-thread-5,5,main]
+2016-11-01 12:54:49 [INFO] DC status monitor stoppedThread[pool-6-thread-4,5,main]
+2016-11-01 12:55:00 [INFO] rate data upload thread stopped:Thread[pool-6-thread-6,5,main]

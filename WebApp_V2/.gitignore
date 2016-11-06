@@ -1,0 +1,16 @@
+/target
+/classes
+/checkouts
+*.class
+/.lein-*
+/.env
+*.log
+/.idea
+*.iml
+.idea
+.DS_Store
+*/target
+.svn
+.project
+.settings
+.classpath

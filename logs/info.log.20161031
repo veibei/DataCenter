@@ -1,0 +1,721 @@
+2016-06-15 08:06:55 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Wed Jun 15 08:06:55 CST 2016]; root of context hierarchy
+2016-06-15 08:06:56 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-06-15 08:06:56 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-06-15 08:06:56 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-06-15 08:06:56 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-06-15 08:06:56 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-06-15 08:06:56 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-06-15 08:06:56 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-06-15 08:06:56 [INFO] remote control established
+2016-06-15 08:06:56 [WARN] 未提供Cluster配置信息
+2016-06-15 08:06:56 [INFO]  add socketpool :pool0
+2016-06-15 08:06:56 [INFO] DefaultCache CheckService is start!
+2016-06-15 08:06:56 [INFO] DefaultCache CheckService is start!
+2016-06-15 08:06:56 [INFO]  add memcachedClient :mcClient
+2016-06-15 08:06:56 [INFO] server loading...
+2016-06-15 08:06:56 [INFO] socket service established:172.20.202.33:50116
+2016-06-15 08:06:56 [INFO] temp pool established
+2016-06-15 08:06:56 [INFO] client pool established
+2016-06-15 08:06:56 [INFO] DTU pool established
+2016-06-15 08:06:56 [INFO] receive queue established with length:100
+2016-06-15 08:06:56 [INFO] send queue established with length :100
+2016-06-15 08:06:56 [INFO] client thread pool established
+2016-06-15 08:06:56 [INFO] server receive msg switcher:true
+2016-06-15 08:06:56 [INFO] server send msg switcher:true
+2016-06-15 08:06:56 [INFO] server connction switcher:true
+2016-06-15 08:06:56 [INFO] receive queue established
+2016-06-15 08:06:56 [INFO] send queue established
+2016-06-15 08:06:57 [INFO] check queue established
+2016-06-15 08:06:57 [INFO] status check thread established
+2016-06-15 08:06:57 [INFO] status upload thread established
+2016-06-15 08:06:57 [INFO] rate data thread established
+2016-06-15 08:31:27 [INFO] remote control connetion established:127.0.0.1:20590
+2016-06-15 08:33:11 [INFO] remote control connetion established:127.0.0.1:20679
+2016-06-15 08:34:24 [INFO] remote control connetion established:127.0.0.1:20771
+2016-10-31 08:13:04 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Mon Oct 31 08:13:04 CST 2016]; root of context hierarchy
+2016-10-31 08:13:25 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-10-31 08:13:46 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-10-31 09:03:03 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Mon Oct 31 09:03:03 CST 2016]; root of context hierarchy
+2016-10-31 09:03:04 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-10-31 09:03:04 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-10-31 09:03:04 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-10-31 09:03:04 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-10-31 09:03:04 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-10-31 09:03:04 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-10-31 09:03:04 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-10-31 09:03:04 [INFO] remote control established
+2016-10-31 09:03:04 [WARN] 未提供Cluster配置信息
+2016-10-31 09:03:04 [INFO]  add socketpool :pool0
+2016-10-31 09:03:04 [INFO] DefaultCache CheckService is start!
+2016-10-31 09:03:05 [INFO] DefaultCache CheckService is start!
+2016-10-31 09:03:05 [INFO]  add memcachedClient :mcClient
+2016-10-31 09:03:05 [INFO] server loading...
+2016-10-31 09:03:05 [INFO] socket service established:172.27.62.116:50116
+2016-10-31 09:03:05 [INFO] temp pool established
+2016-10-31 09:03:05 [INFO] client pool established
+2016-10-31 09:03:05 [INFO] DTU pool established
+2016-10-31 09:03:05 [INFO] receive queue established with length:100
+2016-10-31 09:03:05 [INFO] send queue established with length :100
+2016-10-31 09:03:05 [INFO] client thread pool established
+2016-10-31 09:03:05 [INFO] server receive msg switcher:true
+2016-10-31 09:03:05 [INFO] server send msg switcher:true
+2016-10-31 09:03:05 [INFO] server connction switcher:true
+2016-10-31 09:03:05 [INFO] receive queue established
+2016-10-31 09:03:05 [INFO] send queue established
+2016-10-31 09:03:05 [INFO] check queue established
+2016-10-31 09:03:05 [INFO] status check thread established
+2016-10-31 09:03:05 [INFO] status upload thread established
+2016-10-31 09:03:05 [INFO] rate data thread established
+2016-10-31 09:03:14 [INFO] server starting
+2016-10-31 09:03:14 [INFO] receive queue started...
+2016-10-31 09:03:14 [INFO] server started
+2016-10-31 09:03:14 [INFO] rate data upload thread started:Thread[pool-6-thread-6,5,main]
+2016-10-31 09:03:14 [INFO] status upload thread startedThread[pool-6-thread-5,5,main]
+2016-10-31 09:03:14 [INFO] check queue deamon thread started: Thread[pool-6-thread-3,5,main]
+2016-10-31 09:03:14 [INFO] DC status monitor startedThread[pool-6-thread-4,5,main]
+2016-10-31 09:03:14 [INFO] send queue thread started:Thread[pool-6-thread-2,5,main]
+2016-10-31 09:03:38 [ERROR] ErrorOnSet, cacheKey: server.UpRateCount
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:46)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 09:03:38 [ERROR] ++++ exception thrown while writing bytes to server on set
+2016-10-31 09:03:38 [ERROR] 
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:46)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 09:03:39 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 09:03:39 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 09:04:12 [ERROR] ErrorOnSet, cacheKey: server.UpRateCount
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:46)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 09:04:12 [ERROR] ++++ exception thrown while writing bytes to server on set
+2016-10-31 09:04:12 [ERROR] 
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:46)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 09:04:15 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 09:04:15 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 09:04:16 [ERROR] ErrorOnSet, cacheKey: server.ServerRateCount
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:48)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 09:04:16 [ERROR] ++++ exception thrown while writing bytes to server on set
+2016-10-31 09:04:16 [ERROR] 
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:48)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 09:04:20 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 09:04:20 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 09:04:24 [INFO] stopping service
+2016-10-31 09:04:24 [INFO] send queue thread stopped
+2016-10-31 09:04:24 [INFO] receice queue stopped...
+2016-10-31 09:04:24 [INFO] service stopped
+2016-10-31 09:04:25 [INFO] status upload thread stopped Thread[pool-6-thread-5,5,main]
+2016-10-31 09:04:26 [INFO] check queue deamon thread stopped Thread[pool-6-thread-3,5,main]
+2016-10-31 09:04:26 [INFO] rate data upload thread stopped:Thread[pool-6-thread-6,5,main]
+2016-10-31 09:04:29 [INFO] DC status monitor stoppedThread[pool-6-thread-4,5,main]
+2016-10-31 09:09:59 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Mon Oct 31 09:09:59 CST 2016]; root of context hierarchy
+2016-10-31 09:10:00 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-10-31 09:10:00 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-10-31 09:10:00 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-10-31 09:10:00 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-10-31 09:10:00 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-10-31 09:10:00 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-10-31 09:10:00 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-10-31 09:10:00 [INFO] remote control established
+2016-10-31 09:10:00 [WARN] 未提供Cluster配置信息
+2016-10-31 09:10:00 [INFO]  add socketpool :pool0
+2016-10-31 09:10:00 [INFO] DefaultCache CheckService is start!
+2016-10-31 09:10:00 [INFO] DefaultCache CheckService is start!
+2016-10-31 09:10:00 [INFO]  add memcachedClient :mcClient
+2016-10-31 09:10:00 [INFO] server loading...
+2016-10-31 09:10:00 [INFO] socket service established:172.27.62.116:50116
+2016-10-31 09:10:00 [INFO] temp pool established
+2016-10-31 09:10:00 [INFO] client pool established
+2016-10-31 09:10:00 [INFO] DTU pool established
+2016-10-31 09:10:00 [INFO] receive queue established with length:100
+2016-10-31 09:10:01 [INFO] send queue established with length :100
+2016-10-31 09:10:01 [INFO] client thread pool established
+2016-10-31 09:10:01 [INFO] server receive msg switcher:true
+2016-10-31 09:10:01 [INFO] server send msg switcher:true
+2016-10-31 09:10:01 [INFO] server connction switcher:true
+2016-10-31 09:10:01 [INFO] receive queue established
+2016-10-31 09:10:01 [INFO] send queue established
+2016-10-31 09:10:01 [INFO] check queue established
+2016-10-31 09:10:01 [INFO] status check thread established
+2016-10-31 09:10:01 [INFO] status upload thread established
+2016-10-31 09:10:01 [INFO] rate data thread established
+2016-10-31 09:10:07 [INFO] server starting
+2016-10-31 09:10:07 [INFO] receive queue started...
+2016-10-31 09:10:07 [INFO] server started
+2016-10-31 09:10:07 [INFO] rate data upload thread started:Thread[pool-6-thread-6,5,main]
+2016-10-31 09:10:07 [INFO] status upload thread startedThread[pool-6-thread-5,5,main]
+2016-10-31 09:10:07 [INFO] DC status monitor startedThread[pool-6-thread-4,5,main]
+2016-10-31 09:10:07 [INFO] check queue deamon thread started: Thread[pool-6-thread-3,5,main]
+2016-10-31 09:10:07 [INFO] send queue thread started:Thread[pool-6-thread-2,5,main]
+2016-10-31 09:11:05 [INFO] stopping service
+2016-10-31 09:11:05 [INFO] receice queue stopped...
+2016-10-31 09:11:05 [INFO] service stopped
+2016-10-31 09:11:05 [INFO] send queue thread stopped
+2016-10-31 09:11:05 [INFO] check queue deamon thread stopped Thread[pool-6-thread-3,5,main]
+2016-10-31 09:11:05 [INFO] status upload thread stopped Thread[pool-6-thread-5,5,main]
+2016-10-31 09:11:07 [INFO] DC status monitor stoppedThread[pool-6-thread-4,5,main]
+2016-10-31 09:11:17 [INFO] rate data upload thread stopped:Thread[pool-6-thread-6,5,main]
+2016-10-31 09:13:33 [INFO] main thread exit,please wait...
+2016-10-31 09:14:28 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Mon Oct 31 09:14:28 CST 2016]; root of context hierarchy
+2016-10-31 09:14:28 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-10-31 09:14:28 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-10-31 09:14:28 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-10-31 09:14:28 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-10-31 09:14:28 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-10-31 09:14:28 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-10-31 09:14:28 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-10-31 09:14:29 [INFO] remote control established
+2016-10-31 09:14:29 [WARN] 未提供Cluster配置信息
+2016-10-31 09:14:29 [INFO]  add socketpool :pool0
+2016-10-31 09:14:29 [INFO] DefaultCache CheckService is start!
+2016-10-31 09:14:29 [INFO] DefaultCache CheckService is start!
+2016-10-31 09:14:29 [INFO]  add memcachedClient :mcClient
+2016-10-31 09:14:29 [INFO] server loading...
+2016-10-31 09:14:29 [INFO] socket service established:172.27.62.116:50116
+2016-10-31 09:14:29 [INFO] temp pool established
+2016-10-31 09:14:29 [INFO] client pool established
+2016-10-31 09:14:29 [INFO] DTU pool established
+2016-10-31 09:14:29 [INFO] receive queue established with length:100
+2016-10-31 09:14:29 [INFO] send queue established with length :100
+2016-10-31 09:14:29 [INFO] client thread pool established
+2016-10-31 09:14:29 [INFO] server receive msg switcher:true
+2016-10-31 09:14:29 [INFO] server send msg switcher:true
+2016-10-31 09:14:29 [INFO] server connction switcher:true
+2016-10-31 09:14:29 [INFO] receive queue established
+2016-10-31 09:14:29 [INFO] send queue established
+2016-10-31 09:14:29 [INFO] check queue established
+2016-10-31 09:14:29 [INFO] status check thread established
+2016-10-31 09:14:30 [INFO] status upload thread established
+2016-10-31 09:14:30 [INFO] rate data thread established
+2016-10-31 09:14:36 [INFO] main thread exit,please wait...
+2016-10-31 09:20:15 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Mon Oct 31 09:20:15 CST 2016]; root of context hierarchy
+2016-10-31 09:20:16 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-10-31 09:20:16 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-10-31 09:20:16 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-10-31 09:20:16 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-10-31 09:20:16 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-10-31 09:20:17 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-10-31 09:20:17 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-10-31 09:20:17 [INFO] remote control established
+2016-10-31 09:20:17 [WARN] 未提供Cluster配置信息
+2016-10-31 09:20:17 [INFO]  add socketpool :pool0
+2016-10-31 09:20:17 [INFO] DefaultCache CheckService is start!
+2016-10-31 09:20:17 [INFO] DefaultCache CheckService is start!
+2016-10-31 09:20:17 [INFO]  add memcachedClient :mcClient
+2016-10-31 09:20:17 [INFO] server loading...
+2016-10-31 09:20:17 [INFO] socket service established:172.27.62.116:50116
+2016-10-31 09:20:17 [INFO] temp pool established
+2016-10-31 09:20:17 [INFO] client pool established
+2016-10-31 09:20:17 [INFO] DTU pool established
+2016-10-31 09:20:17 [INFO] receive queue established with length:100
+2016-10-31 09:20:17 [INFO] send queue established with length :100
+2016-10-31 09:20:17 [INFO] client thread pool established
+2016-10-31 09:20:17 [INFO] server receive msg switcher:true
+2016-10-31 09:20:17 [INFO] server send msg switcher:true
+2016-10-31 09:20:17 [INFO] server connction switcher:true
+2016-10-31 09:20:17 [INFO] receive queue established
+2016-10-31 09:20:17 [INFO] send queue established
+2016-10-31 09:20:17 [INFO] check queue established
+2016-10-31 09:20:17 [INFO] status check thread established
+2016-10-31 09:20:17 [INFO] status upload thread established
+2016-10-31 09:20:17 [INFO] rate data thread established
+2016-10-31 09:43:28 [INFO] remote control connetion established:172.27.62.116:39350
+2016-10-31 09:43:28 [INFO] remote control thread stopped Thread[pool-7-thread-1,5,main]
+2016-10-31 09:43:30 [INFO] remote control connetion established:172.27.62.116:39356
+2016-10-31 09:43:30 [INFO] remote control thread stopped Thread[pool-7-thread-2,5,main]
+2016-10-31 09:44:05 [INFO] remote control connetion established:172.27.62.116:39404
+2016-10-31 09:44:06 [INFO] admin@127.0.0.1request start server
+2016-10-31 09:44:06 [INFO] server starting
+2016-10-31 09:44:06 [INFO] receive queue started...
+2016-10-31 09:44:06 [INFO] server started
+2016-10-31 09:44:06 [INFO] DC status monitor startedThread[pool-6-thread-4,5,main]
+2016-10-31 09:44:06 [INFO] status upload thread startedThread[pool-6-thread-5,5,main]
+2016-10-31 09:44:06 [INFO] rate data upload thread started:Thread[pool-6-thread-6,5,main]
+2016-10-31 09:44:06 [INFO] check queue deamon thread started: Thread[pool-6-thread-3,5,main]
+2016-10-31 09:44:06 [INFO] send queue thread started:Thread[pool-6-thread-2,5,main]
+2016-10-31 09:44:06 [INFO] remote control thread stopped Thread[pool-7-thread-3,5,main]
+2016-10-31 09:45:05 [INFO] remote control connetion established:172.27.62.116:39471
+2016-10-31 09:45:06 [INFO] admin@127.0.0.1request stop server
+2016-10-31 09:45:06 [INFO] stopping service
+2016-10-31 09:45:06 [INFO] receice queue stopped...
+2016-10-31 09:45:06 [INFO] service stopped
+2016-10-31 09:45:06 [INFO] send queue thread stopped
+2016-10-31 09:45:06 [INFO] status upload thread stopped Thread[pool-6-thread-5,5,main]
+2016-10-31 09:45:06 [INFO] remote control thread stopped Thread[pool-7-thread-4,5,main]
+2016-10-31 09:45:06 [INFO] rate data upload thread stopped:Thread[pool-6-thread-6,5,main]
+2016-10-31 09:45:06 [INFO] DC status monitor stoppedThread[pool-6-thread-4,5,main]
+2016-10-31 09:45:06 [INFO] check queue deamon thread stopped Thread[pool-6-thread-3,5,main]
+2016-10-31 09:45:25 [INFO] remote control connetion established:172.27.62.116:39496
+2016-10-31 09:45:25 [INFO] remote control thread stopped Thread[pool-7-thread-5,5,main]
+2016-10-31 09:45:28 [INFO] remote control connetion established:172.27.62.116:39508
+2016-10-31 09:45:28 [INFO] remote control thread stopped Thread[pool-7-thread-1,5,main]
+2016-10-31 11:02:26 [INFO] remote control connetion established:172.27.62.116:44190
+2016-10-31 11:02:26 [INFO] remote control thread stopped Thread[pool-7-thread-2,5,main]
+2016-10-31 11:05:20 [INFO] remote control connetion established:172.27.62.116:44342
+2016-10-31 11:05:21 [INFO] remote control thread stopped Thread[pool-7-thread-3,5,main]
+2016-10-31 11:08:58 [INFO] remote control connetion established:172.27.62.116:44565
+2016-10-31 11:08:58 [INFO] admin@127.0.0.1request start server
+2016-10-31 11:08:58 [INFO] server starting
+2016-10-31 11:08:58 [INFO] receive queue started...
+2016-10-31 11:08:58 [INFO] server started
+2016-10-31 11:08:58 [INFO] check queue deamon thread started: Thread[pool-6-thread-9,5,main]
+2016-10-31 11:08:58 [INFO] rate data upload thread started:Thread[pool-6-thread-2,5,main]
+2016-10-31 11:08:58 [INFO] status upload thread startedThread[pool-6-thread-1,5,main]
+2016-10-31 11:08:58 [INFO] DC status monitor startedThread[pool-6-thread-10,5,main]
+2016-10-31 11:08:58 [INFO] send queue thread started:Thread[pool-6-thread-8,5,main]
+2016-10-31 11:08:58 [INFO] remote control thread stopped Thread[pool-7-thread-4,5,main]
+2016-10-31 11:09:35 [ERROR] ErrorOnSet, cacheKey: server.UpRateCount
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:46)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 11:09:35 [ERROR] ++++ exception thrown while writing bytes to server on set
+2016-10-31 11:09:35 [ERROR] 
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:46)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 11:09:38 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:09:38 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:09:43 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:09:43 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:09:52 [ERROR] ErrorOnSet, cacheKey: server.UpRateCount
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:46)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 11:09:52 [ERROR] ++++ exception thrown while writing bytes to server on set
+2016-10-31 11:09:52 [ERROR] 
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:46)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 11:09:53 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:09:53 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:09:53 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:09:53 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:10:08 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:10:08 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:10:33 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:10:33 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:11:13 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:11:13 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:11:13 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:11:14 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:11:24 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:11:24 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:11:24 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:11:24 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:11:25 [ERROR] ErrorOnSet, cacheKey: server.DownRateCount
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:47)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 11:11:25 [ERROR] ++++ exception thrown while writing bytes to server on set
+2016-10-31 11:11:25 [ERROR] 
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:47)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 11:11:29 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:11:29 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:11:29 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:11:29 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:11:39 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:11:39 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:11:39 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:11:39 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:11:44 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:11:44 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:08 [ERROR] ErrorOnSet, cacheKey: server.UpRateCount
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:46)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 11:12:08 [ERROR] ++++ exception thrown while writing bytes to server on set
+2016-10-31 11:12:08 [ERROR] 
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:46)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 11:12:09 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:09 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:09 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:09 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:09 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:09 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:09 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:09 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:14 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:14 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:15 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:15 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:15 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:15 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:15 [ERROR] ErrorOnSet, cacheKey: server.ServerRateCount
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:48)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 11:12:15 [ERROR] ++++ exception thrown while writing bytes to server on set
+2016-10-31 11:12:15 [ERROR] 
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:211)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.readLine(SockIOPool.java:2469)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.set(MemCachedClient.java:839)
+	at com.alisoft.xplatform.asf.cache.memcached.client.MemCachedClient.replace(MemCachedClient.java:609)
+	at com.alisoft.xplatform.asf.cache.memcached.MemcachedCache.replace(MemcachedCache.java:903)
+	at com.songxu.memcached.MemecachedOperate.update(MemecachedOperate.java:86)
+	at com.songxu.thread.look.UploadRateData.run(UploadRateData.java:48)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-10-31 11:12:20 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:20 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:25 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:25 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:25 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:25 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:25 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:25 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:26 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:26 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:26 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:26 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:27 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:27 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:27 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-10-31 11:12:27 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-10-31 11:12:33 [INFO] remote control connetion established:172.27.62.116:44723
+2016-10-31 11:12:33 [INFO] admin@127.0.0.1request stop server
+2016-10-31 11:12:33 [INFO] stopping service
+2016-10-31 11:12:33 [INFO] receice queue stopped...
+2016-10-31 11:12:33 [INFO] service stopped
+2016-10-31 11:12:33 [INFO] send queue thread stopped
+2016-10-31 11:12:33 [INFO] remote control thread stopped Thread[pool-7-thread-5,5,main]
+2016-10-31 11:12:34 [INFO] DC status monitor stoppedThread[pool-6-thread-10,5,main]
+2016-10-31 11:12:34 [INFO] status upload thread stopped Thread[pool-6-thread-1,5,main]
+2016-10-31 11:12:35 [INFO] check queue deamon thread stopped Thread[pool-6-thread-9,5,main]
+2016-10-31 11:12:35 [INFO] rate data upload thread stopped:Thread[pool-6-thread-2,5,main]
+2016-10-31 13:44:12 [INFO] remote control connetion established:172.27.62.116:53495
+2016-10-31 13:44:12 [INFO] remote control thread stopped Thread[pool-7-thread-1,5,main]
+2016-10-31 13:44:14 [INFO] remote control connetion established:172.27.62.116:53507
+2016-10-31 13:44:14 [INFO] remote control thread stopped Thread[pool-7-thread-2,5,main]
+2016-10-31 13:44:19 [INFO] remote control connetion established:172.27.62.116:53512
+2016-10-31 13:44:19 [INFO] remote control thread stopped Thread[pool-7-thread-3,5,main]
+2016-10-31 13:44:21 [INFO] remote control connetion established:172.27.62.116:53514
+2016-10-31 13:44:21 [INFO] remote control thread stopped Thread[pool-7-thread-4,5,main]

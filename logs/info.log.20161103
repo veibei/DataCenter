@@ -1,0 +1,170 @@
+2016-11-03 10:20:28 [INFO] remote control connetion established:172.27.62.116:30453
+2016-11-03 10:23:47 [INFO] remote control connetion established:172.27.62.116:30591
+2016-11-03 10:23:47 [INFO] admin@127.0.0.1request start server
+2016-11-03 10:23:47 [INFO] server starting
+2016-11-03 10:23:47 [INFO] receive queue started...
+2016-11-03 10:23:47 [INFO] DC status monitor startedThread[pool-6-thread-10,5,main]
+2016-11-03 10:23:47 [INFO] send queue thread started:Thread[pool-6-thread-8,5,main]
+2016-11-03 10:23:47 [INFO] check queue deamon thread started: Thread[pool-6-thread-9,5,main]
+2016-11-03 10:23:47 [INFO] status upload thread startedThread[pool-6-thread-1,5,main]
+2016-11-03 10:23:47 [INFO] rate data upload thread started:Thread[pool-6-thread-2,5,main]
+2016-11-03 10:23:47 [INFO] server started
+2016-11-03 10:23:47 [INFO] remote control thread stopped Thread[pool-7-thread-3,5,main]
+2016-11-03 10:24:07 [INFO] remote control connetion established:172.27.62.116:30599
+2016-11-03 10:24:07 [INFO] admin@127.0.0.1request start server
+2016-11-03 10:24:07 [INFO] remote control thread stopped Thread[pool-7-thread-4,5,main]
+2016-11-03 10:25:10 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Thu Nov 03 10:25:10 CST 2016]; root of context hierarchy
+2016-11-03 10:25:11 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-11-03 10:25:11 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-11-03 10:25:11 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-11-03 10:25:11 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-11-03 10:25:11 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-11-03 10:25:11 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-11-03 10:25:11 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-11-03 10:25:11 [INFO] remote control established
+2016-11-03 10:25:11 [WARN] 未提供Cluster配置信息
+2016-11-03 10:25:11 [INFO]  add socketpool :pool0
+2016-11-03 10:25:11 [INFO] DefaultCache CheckService is start!
+2016-11-03 10:25:11 [INFO] DefaultCache CheckService is start!
+2016-11-03 10:25:12 [INFO]  add memcachedClient :mcClient
+2016-11-03 10:25:12 [INFO] server loading...
+2016-11-03 10:25:12 [INFO] socket service established:172.27.62.116:50116
+2016-11-03 10:25:12 [INFO] temp pool established
+2016-11-03 10:25:12 [INFO] client pool established
+2016-11-03 10:25:12 [INFO] DTU pool established
+2016-11-03 10:25:12 [INFO] receive queue established with length:100
+2016-11-03 10:25:12 [INFO] send queue established with length :100
+2016-11-03 10:25:12 [INFO] client thread pool established
+2016-11-03 10:25:12 [INFO] server receive msg switcher:true
+2016-11-03 10:25:12 [INFO] server send msg switcher:true
+2016-11-03 10:25:12 [INFO] server connction switcher:true
+2016-11-03 10:25:12 [INFO] receive queue established
+2016-11-03 10:25:12 [INFO] send queue established
+2016-11-03 10:25:12 [INFO] check queue established
+2016-11-03 10:25:12 [INFO] status check thread established
+2016-11-03 10:25:12 [INFO] status upload thread established
+2016-11-03 10:25:12 [INFO] rate data thread established
+2016-11-03 10:25:26 [INFO] remote control connetion established:172.27.62.116:30702
+2016-11-03 10:25:26 [INFO] admin@127.0.0.1request start server
+2016-11-03 10:25:26 [INFO] server starting
+2016-11-03 10:25:26 [INFO] receive queue started...
+2016-11-03 10:25:26 [INFO] server started
+2016-11-03 10:25:26 [INFO] remote control thread stopped Thread[pool-7-thread-1,5,main]
+2016-11-03 10:25:26 [INFO] check queue deamon thread started: Thread[pool-6-thread-3,5,main]
+2016-11-03 10:25:26 [INFO] send queue thread started:Thread[pool-6-thread-2,5,main]
+2016-11-03 10:25:26 [INFO] rate data upload thread started:Thread[pool-6-thread-6,5,main]
+2016-11-03 10:25:26 [INFO] status upload thread startedThread[pool-6-thread-5,5,main]
+2016-11-03 10:25:26 [INFO] DC status monitor startedThread[pool-6-thread-4,5,main]
+2016-11-03 10:46:20 [INFO] remote control connetion established:172.27.62.116:31631
+2016-11-03 10:46:25 [INFO] remote control connetion established:172.27.62.116:31635
+2016-11-03 10:47:22 [INFO] remote control connetion established:172.27.62.116:31687
+2016-11-03 10:47:22 [INFO] admin@127.0.0.1request stop server
+2016-11-03 10:47:22 [INFO] stopping service
+2016-11-03 10:47:23 [INFO] receice queue stopped...
+2016-11-03 10:47:23 [INFO] service stopped
+2016-11-03 10:47:23 [INFO] send queue thread stopped
+2016-11-03 10:47:23 [INFO] remote control thread stopped Thread[pool-7-thread-4,5,main]
+2016-11-03 10:47:23 [INFO] status upload thread stopped Thread[pool-6-thread-5,5,main]
+2016-11-03 10:47:24 [INFO] check queue deamon thread stopped Thread[pool-6-thread-3,5,main]
+2016-11-03 10:47:26 [INFO] DC status monitor stoppedThread[pool-6-thread-4,5,main]
+2016-11-03 10:47:35 [INFO] rate data upload thread stopped:Thread[pool-6-thread-6,5,main]
+2016-11-03 10:54:51 [INFO] remote control connetion established:172.27.62.116:31946
+2016-11-03 10:54:51 [INFO] admin@127.0.0.1request start server
+2016-11-03 10:54:51 [INFO] server starting
+2016-11-03 10:54:51 [INFO] receive queue started...
+2016-11-03 10:54:51 [INFO] server started
+2016-11-03 10:54:51 [INFO] DC status monitor startedThread[pool-6-thread-10,5,main]
+2016-11-03 10:54:51 [INFO] check queue deamon thread started: Thread[pool-6-thread-9,5,main]
+2016-11-03 10:54:51 [INFO] rate data upload thread started:Thread[pool-6-thread-2,5,main]
+2016-11-03 10:54:51 [INFO] status upload thread startedThread[pool-6-thread-1,5,main]
+2016-11-03 10:54:51 [INFO] send queue thread started:Thread[pool-6-thread-8,5,main]
+2016-11-03 10:54:51 [INFO] remote control thread stopped Thread[pool-7-thread-5,5,main]
+2016-11-03 10:55:35 [INFO] remote control connetion established:172.27.62.116:31989
+2016-11-03 10:55:35 [INFO] admin@127.0.0.1request stop server
+2016-11-03 10:55:35 [INFO] stopping service
+2016-11-03 10:55:35 [INFO] send queue thread stopped
+2016-11-03 10:55:35 [INFO] service stopped
+2016-11-03 10:55:35 [INFO] receice queue stopped...
+2016-11-03 10:55:35 [INFO] remote control thread stopped Thread[pool-7-thread-1,5,main]
+2016-11-03 10:55:35 [INFO] check queue deamon thread stopped Thread[pool-6-thread-9,5,main]
+2016-11-03 10:55:36 [INFO] status upload thread stopped Thread[pool-6-thread-1,5,main]
+2016-11-03 10:55:36 [INFO] DC status monitor stoppedThread[pool-6-thread-10,5,main]
+2016-11-03 10:55:40 [INFO] rate data upload thread stopped:Thread[pool-6-thread-2,5,main]
+2016-11-03 11:11:59 [INFO] remote control connetion established:172.27.62.116:32629
+2016-11-03 11:12:00 [INFO] admin@127.0.0.1request start server
+2016-11-03 11:12:00 [INFO] server starting
+2016-11-03 11:12:00 [INFO] receive queue started...
+2016-11-03 11:12:00 [INFO] server started
+2016-11-03 11:12:00 [INFO] rate data upload thread started:Thread[pool-6-thread-7,5,main]
+2016-11-03 11:12:00 [INFO] DC status monitor startedThread[pool-6-thread-6,5,main]
+2016-11-03 11:12:00 [INFO] status upload thread startedThread[pool-6-thread-8,5,main]
+2016-11-03 11:12:00 [INFO] send queue thread started:Thread[pool-6-thread-3,5,main]
+2016-11-03 11:12:00 [INFO] check queue deamon thread started: Thread[pool-6-thread-4,5,main]
+2016-11-03 11:12:00 [INFO] remote control thread stopped Thread[pool-7-thread-4,5,main]
+2016-11-03 11:45:07 [INFO] remote control connetion established:172.27.62.116:33852
+2016-11-03 11:45:07 [INFO] admin@127.0.0.1request stop server
+2016-11-03 11:45:07 [INFO] stopping service
+2016-11-03 11:45:07 [INFO] receice queue stopped...
+2016-11-03 11:45:07 [INFO] service stopped
+2016-11-03 11:45:07 [INFO] send queue thread stopped
+2016-11-03 11:45:07 [INFO] remote control thread stopped Thread[pool-7-thread-5,5,main]
+2016-11-03 11:45:08 [INFO] status upload thread stopped Thread[pool-6-thread-8,5,main]
+2016-11-03 11:45:08 [INFO] check queue deamon thread stopped Thread[pool-6-thread-4,5,main]
+2016-11-03 11:45:08 [INFO] rate data upload thread stopped:Thread[pool-6-thread-7,5,main]
+2016-11-03 11:45:10 [INFO] DC status monitor stoppedThread[pool-6-thread-6,5,main]
+2016-11-03 11:46:53 [INFO] remote control connetion established:172.27.62.116:33991
+2016-11-03 11:46:53 [INFO] admin@127.0.0.1request start server
+2016-11-03 11:46:54 [INFO] server starting
+2016-11-03 11:46:54 [INFO] receive queue started...
+2016-11-03 11:46:54 [INFO] server started
+2016-11-03 11:46:54 [INFO] remote control thread stopped Thread[pool-7-thread-1,5,main]
+2016-11-03 11:46:54 [INFO] rate data upload thread started:Thread[pool-6-thread-3,5,main]
+2016-11-03 11:46:54 [INFO] status upload thread startedThread[pool-6-thread-5,5,main]
+2016-11-03 11:46:54 [INFO] check queue deamon thread started: Thread[pool-6-thread-10,5,main]
+2016-11-03 11:46:54 [INFO] DC status monitor startedThread[pool-6-thread-2,5,main]
+2016-11-03 11:46:54 [INFO] send queue thread started:Thread[pool-6-thread-1,5,main]
+2016-11-03 11:47:10 [INFO] remote control connetion established:172.27.62.116:33999
+2016-11-03 11:47:11 [INFO] admin@127.0.0.1request stop server
+2016-11-03 11:47:11 [INFO] stopping service
+2016-11-03 11:47:11 [INFO] receice queue stopped...
+2016-11-03 11:47:11 [INFO] service stopped
+2016-11-03 11:47:11 [INFO] send queue thread stopped
+2016-11-03 11:47:11 [INFO] remote control thread stopped Thread[pool-7-thread-4,5,main]
+2016-11-03 11:47:11 [INFO] status upload thread stopped Thread[pool-6-thread-5,5,main]
+2016-11-03 11:47:12 [INFO] check queue deamon thread stopped Thread[pool-6-thread-10,5,main]
+2016-11-03 11:47:13 [INFO] rate data upload thread stopped:Thread[pool-6-thread-3,5,main]
+2016-11-03 11:47:14 [INFO] DC status monitor stoppedThread[pool-6-thread-2,5,main]
+2016-11-03 11:47:27 [INFO] remote control connetion established:172.27.62.116:34002
+2016-11-03 11:47:27 [INFO] admin@127.0.0.1request start server
+2016-11-03 11:47:27 [INFO] server starting
+2016-11-03 11:47:27 [INFO] receive queue started...
+2016-11-03 11:47:27 [INFO] server started
+2016-11-03 11:47:27 [INFO] rate data upload thread started:Thread[pool-6-thread-1,5,main]
+2016-11-03 11:47:27 [INFO] status upload thread startedThread[pool-6-thread-9,5,main]
+2016-11-03 11:47:27 [INFO] DC status monitor startedThread[pool-6-thread-6,5,main]
+2016-11-03 11:47:27 [INFO] check queue deamon thread started: Thread[pool-6-thread-7,5,main]
+2016-11-03 11:47:27 [INFO] send queue thread started:Thread[pool-6-thread-4,5,main]
+2016-11-03 11:47:27 [INFO] remote control thread stopped Thread[pool-7-thread-5,5,main]
+2016-11-03 12:06:08 [INFO] remote control connetion established:172.27.62.116:35111
+2016-11-03 12:06:08 [INFO] admin@127.0.0.1request stop server
+2016-11-03 12:06:08 [INFO] stopping service
+2016-11-03 12:06:08 [INFO] receice queue stopped...
+2016-11-03 12:06:08 [INFO] service stopped
+2016-11-03 12:06:08 [INFO] send queue thread stopped
+2016-11-03 12:06:08 [INFO] remote control thread stopped Thread[pool-7-thread-1,5,main]
+2016-11-03 12:06:09 [INFO] status upload thread stopped Thread[pool-6-thread-9,5,main]
+2016-11-03 12:06:09 [INFO] check queue deamon thread stopped Thread[pool-6-thread-7,5,main]
+2016-11-03 12:06:12 [INFO] rate data upload thread stopped:Thread[pool-6-thread-1,5,main]
+2016-11-03 12:06:12 [INFO] DC status monitor stoppedThread[pool-6-thread-6,5,main]
+2016-11-03 12:06:15 [INFO] remote control connetion established:172.27.62.116:35113
+2016-11-03 12:06:15 [INFO] admin@127.0.0.1request start server
+2016-11-03 12:06:15 [INFO] server starting
+2016-11-03 12:06:15 [INFO] receive queue started...
+2016-11-03 12:06:15 [INFO] server started
+2016-11-03 12:06:15 [INFO] status upload thread startedThread[pool-6-thread-8,5,main]
+2016-11-03 12:06:15 [INFO] rate data upload thread started:Thread[pool-6-thread-4,5,main]
+2016-11-03 12:06:15 [INFO] DC status monitor startedThread[pool-6-thread-2,5,main]
+2016-11-03 12:06:15 [INFO] send queue thread started:Thread[pool-6-thread-10,5,main]
+2016-11-03 12:06:15 [INFO] check queue deamon thread started: Thread[pool-6-thread-3,5,main]
+2016-11-03 12:06:15 [INFO] remote control thread stopped Thread[pool-7-thread-4,5,main]
+2016-11-03 15:17:22 [INFO] remote control connetion established:172.27.62.116:46188

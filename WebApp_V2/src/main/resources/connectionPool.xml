@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <bean id="connectionPool" class="org.darkphoenixs.pool.socket.SocketConnectionPool">
+        <constructor-arg type="org.darkphoenixs.pool.PoolConfig" ref="connectionPoolConfig">
+
+        </constructor-arg>
+        <constructor-arg type="java.util.Properties">
+            <map>
+                <entry key="address" value="172.27.62.116:50118"></entry>
+                <entry key="receiveBufferSize" value="4096"></entry>
+                <entry key="sendBufferSize" value="4096"></entry>
+                <entry key="connectionTimeout" value="2000"></entry>
+                <entry key="soTimeout" value="2000"></entry>
+            </map>
+        </constructor-arg>
+
+    </bean>
+
+    <bean id="connectionPoolConfig" class="org.darkphoenixs.pool.PoolConfig">
+        <property name="maxIdle" value="5"></property>
+        <property name="maxTotal" value="20"></property>
+        <property name="maxWaitMillis" value="1000"></property>
+        <property name="testOnBorrow" value="true"></property>
+    </bean>
+
+
+</beans>

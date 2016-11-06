@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	<!-- Server 核心类 -->
+	<bean name="server" class="com.songxu.core.Server" depends-on="memcachedOperate">
+		<constructor-arg name="acceptor" ref="ioAcceptor"/>
+		<constructor-arg name="tempPool" ref="tempPool"/>
+		<constructor-arg name="clientPool" ref="clientPool"/>
+		<constructor-arg name="dTUPool" ref="DTUPool"/>
+		<constructor-arg name="receivePool" ref="receivePool"/>
+		<constructor-arg name="sendPool" ref="sendPool"/>
+		<constructor-arg name="clientThreadPooL" ref="allClientPool"/>
+		<constructor-arg name="ifReceiveMsg" value="true" type="boolean"/>
+		<constructor-arg name="ifSendMsg" value="true" type="boolean"/>
+		<constructor-arg name="ifAcceptConnect" value="true" type="boolean"/>
+		<constructor-arg name="receiveQueueThread" ref="receiveQueueThread"/>
+		<constructor-arg name="sendQueueThread" ref="sendQueueThread"/>
+		<constructor-arg name="checkQueueThread" ref="checkQueueThread"/>
+		<constructor-arg name="checkStatusThread" ref="checkStatusThread"/>
+		<constructor-arg name="uploadStatusThread" ref="uploadStatusThread"/>
+		<constructor-arg name="uploadRateDataThread" ref="uploadRateDataThread"/>
+		<constructor-arg name="MemecachedOperate" ref="memcachedOperate"/>
+	</bean>
+
+	<!--核心线程 发送 接收队列线程 -->
+	<bean name="receiveQueueThread" lazy-init="true"
+		class="com.songxu.thread.core.ReceiveQueueThreadImpl" />
+	<bean name="sendQueueThread"  lazy-init="true" class="com.songxu.thread.core.SendQueueThreadImpl" />
+
+	<!-- 守护线程 -->
+	<!-- 对于守护线程来说 因为存在不需要加载的情况 所有它的lazy应该为true 减少使用空间 -->
+	<bean name="checkStatusThread" lazy-init="true"
+		class="com.songxu.thread.look.CheckStatusImpl" />
+		
+	<bean name="checkQueueThread" lazy-init="true" class="com.songxu.thread.look.CheckQueueImpl"/>
+	<!-- 2015-11-3新增  用于上传数据至Memcached服务 -->
+	<bean name="uploadStatusThread" lazy-init="true" class="com.songxu.thread.look.UploadStatus"/>
+	<!-- 2015-11-3新增  用于上传流量数据至Memcached服务 -->
+	<bean name="uploadRateDataThread" lazy-init="true" class="com.songxu.thread.look.UploadRateData"/>
+	<!-- 客户端连接池 -->
+	<!--  -->
+	<bean name="tempPool" class="java.util.concurrent.ConcurrentHashMap" >
+        <constructor-arg value="${server.pool.tempPoolSize}" type="int"></constructor-arg>
+    </bean>
+	
+	<bean name="clientPool" class="java.util.concurrent.ConcurrentHashMap" >
+		<constructor-arg value="${server.pool.clientPoolSize}" type="int"></constructor-arg>
+	</bean>
+	
+	<bean name="DTUPool" class="java.util.concurrent.ConcurrentHashMap" >
+		<constructor-arg value="${server.pool.DTUPoolSize}" type="int"></constructor-arg>
+	</bean>
+	
+	<!-- 发送接收队列 -->
+	
+	<bean name="receivePool" class="java.util.concurrent.ArrayBlockingQueue" >
+		<constructor-arg value="${server.queue.receivePoolSize}" type="int"></constructor-arg>
+	</bean>
+	
+	<bean name="sendPool" class="java.util.concurrent.ArrayBlockingQueue" >
+		<constructor-arg value="${server.queue.sendPoolSize}" type="int"></constructor-arg>
+	</bean>
+	
+	<!-- 客户端线程池 -->
+	
+	<bean name="allClientPool" class="java.util.concurrent.ConcurrentLinkedQueue"/>
+	<!-- memecahcedOperate操作类 -->
+	<bean name="memcachedOperate" class="com.songxu.memcached.MemecachedOperate">
+        <constructor-arg name="manager" ref="mcManager"></constructor-arg>
+        <constructor-arg name="clientName" value="${mc.client.name}"></constructor-arg>
+    </bean>
+
+
+
+
+</beans>

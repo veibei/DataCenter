@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>DTU数据中心管理平台</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link href="resource/common/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="resource/common/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resource/common/css/AdminLTE.min.css" rel="stylesheet">
+    <link href="resource/common/css/skin-blue.min.css" rel="stylesheet">
+
+</head>
+<!--
+
+-->
+<body ng-app="dtucenter" class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <!-- Main Header -->
+    <header class="main-header">
+
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>DCM</b></span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg">DTU<b>数据管理平台</b></span>
+        </a>
+
+        <!-- Header Navbar -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a style="" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="img/head.jpg" class="user-image" alt="User Image">
+                            <span class="hidden-xs">{{user}}</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                                <img src="img/head.jpg" class="img-circle" alt="User Image">
+
+                                <p>
+                                    {{user}} - Web Developer
+                                    <small>Member since Nov. 2015</small>
+                                </p>
+                            </li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-default btn-flat">管理页面</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#" class="btn btn-default btn-flat">退 出</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu">
+                <li class="header">导航</li>
+                <!-- Optionally, you can add icons to the links -->
+                <li ng-class="{'active':url=='main'}"><a href="/index.html#/main"><i class="fa fa-dashboard"></i> <span>基本信息</span></a></li>
+                <li ng-class="{'active':url=='client'}"><a href="/index.html#/client"><i class="fa fa-cubes"></i> <span>client客户端</span></a></li>
+                <li ng-class="{'active':url=='dtu'}"><a href="/index.html#/dtu"><i class="fa fa-line-chart"></i> <span>dtu客户端</span></a></li>
+                <li ng-class="{'active':url=='log'}"><a href="/index.html#/log"><i class="fa  fa-sticky-note"></i> <span>日志</span></a></li>
+                <!-- <li></li>-->
+            </ul>
+            <!-- /.sidebar-menu -->
+
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div   class="content-wrapper">
+        <div ng-view></div>
+    </div>
+    <!-- /.content-wrapper -->
+
+
+
+</div>
+
+    <!-- REQUIRED JS SCRIPTS -->
+
+    <!-- jQuery 2.2.0 -->
+    <script src="resource/common/js/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="resource/common/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="resource/common/js/app.min.js"></script>
+    <!--AngularJS-->
+    <script src="resource/common/js/moment-with-locales-2.13.0.min.js"></script>
+    <script src="resource/common/js/angular-package-1.4.9.min.js"></script>
+    <script src="resource/common/js/angular-plugins.min.js"></script>
+    <!--<script src="resource/common/js/angular-animate.min.js"></script>-->
+    <script src="resource/common/util.js"></script>
+    <!--AngularJS Settings-->
+
+    <script src="resource/common/main.js"></script>
+    <script src="resource/common/router.js"></script>
+
+    <!--Controller-->
+
+    <script src="resource/common/controller/mainController.js"></script>
+    <script src="resource/common/controller/dtuController.js"></script>
+    <script src="resource/common/controller/clientController.js"></script>
+    <script src="resource/common/controller/logController.js"></script>
+
+
+    <script src="resource/common/service/indexService.js"></script>
+
+
+
+
+
+</body>
+</html>

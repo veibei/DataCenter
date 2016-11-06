@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+
+
+	<!-- socketAcceptor -->
+
+	<!-- handler -->
+	<bean name="serverHandler" class="com.songxu.mina.sever.SeverHandler" />
+
+	<!-- filters -->
+
+	<!-- 开关拦截器 -->
+	<bean name="rsFilter" lazy-init="true" class="com.songxu.mina.filter.ReceiveAndSendFilter" />
+
+	<!-- 对象转换器   转换字符串对象使用  -->
+	<bean name="factory" class="com.songxu.mina.corder.CodeFactory">
+		<constructor-arg name="chartSetName" value="${server.filter.encode}"/>
+	</bean> 
+	<bean name="objectFilter"  class="org.apache.mina.filter.codec.ProtocolCodecFilter">
+		<constructor-arg  ref="factory"/>
+	</bean>
+	
+	<!-- 序列化对象  序列化与反序列化时使用   2015-10-21 -->
+	<bean name="serializationFilter"  class="org.apache.mina.filter.codec.serialization.ObjectSerializationCodecFactory">
+	</bean>
+		
+	<bean name="serializationobjectFilter"  class="org.apache.mina.filter.codec.ProtocolCodecFilter">
+		<constructor-arg  ref="serializationFilter"/>
+
+	</bean>
+	<!-- 校验合法性拦截器 -->
+	<bean name="check" lazy-init="true" class="com.songxu.mina.filter.CheckValibleFilter" />
+
+	<!-- 数据记录拦截器 -->
+	<bean name="record" lazy-init="true" class="com.songxu.mina.filter.MessageRecord" />
+
+	<!-- 流量统计 -->
+	<bean name="rate" lazy-init="true" class="com.songxu.mina.filter.RateStatistics" />
+
+	<bean id="filterChainBuilder"
+		class="org.apache.mina.core.filterchain.DefaultIoFilterChainBuilder">
+		<property name="filters">
+			<map>
+				<entry key="rsFilter" value-ref="rsFilter" /> 
+				<entry key="serializationobjectFilter" value-ref="serializationobjectFilter" />
+				<!-- <entry key="objectFilter" value-ref="objectFilter" /> -->
+				<entry key="check" value-ref="check" />
+				<entry key="record" value-ref="record" />
+				<entry key="rate" value-ref="rate" />
+			</map>
+		</property>
+	</bean>
+	<!-- 配置Acceptor -->
+	<bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+                <entry key = "java.net.SocketAddress" value = "org.apache.mina.integration.beans.InetSocketAddressEditor" />
+            </map>
+		</property>
+	</bean>
+
+	<bean id="ioAcceptor"
+		class="org.apache.mina.transport.socket.nio.NioSocketAcceptor">
+		<!-- 配置绑定的端口 -->
+		<property name="defaultLocalAddress" value="${server.ip}:${server.port}" />
+		<property name="handler" ref="serverHandler" />
+		<property name="filterChainBuilder" ref="filterChainBuilder" />
+	</bean>
+
+
+
+
+
+
+
+
+
+
+</beans>

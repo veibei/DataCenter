@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="mcManager" class="com.songxu.cache.reactor.AliCacheManger4Spring" init-method="start">
+        <property name="useConfigFile" value="false"></property>
+        <property name="memcachedClientconfigs"  >
+            <list value-type="com.alisoft.xplatform.asf.cache.memcached.MemcachedClientConfig" >
+                <ref bean="clientConfig"></ref>
+            </list>
+
+        </property>
+        <property name="memcachedClientSocketPoolConfigs">
+            <list value-type="com.alisoft.xplatform.asf.cache.memcached.MemcachedClientSocketPoolConfig">
+                <ref bean="socketPoolConfig"></ref>
+            </list>
+
+        </property>
+
+    </bean>
+
+    <bean id="clientConfig" class="com.alisoft.xplatform.asf.cache.memcached.MemcachedClientConfig">
+        <property name="name" value="${mc.client.name}"></property>
+        <property name="socketPool" value="pool0"></property>
+        <property name="compressEnable" value="true"></property>
+        <property name="defaultEncoding" value="UTF-8"></property>
+        <property name="errorHandler" value="com.alisoft.xplatform.asf.cache.memcached.MemcachedErrorHandler"></property>
+    </bean>
+    <bean id="socketPoolConfig" class="com.alisoft.xplatform.asf.cache.memcached.MemcachedClientSocketPoolConfig">
+        <property name="name" value="pool0"></property>
+        <property name="failover" value="false"></property>
+        <property name="aliveCheck" value="true"></property>
+        <property name="initConn" value="5"></property>
+        <property name="minConn" value="5"></property>
+        <property name="nagle" value="false"></property>
+        <property name="maintSleep" value="5000"></property>
+        <property name="maxConn" value="250"></property>
+        <property name="socketTo" value="3000"></property>
+        <property name="servers" value="${mc.servers}"></property>
+        <property name="weights" value="${mc.weights}"></property>
+    </bean>
+
+
+    
+</beans>
