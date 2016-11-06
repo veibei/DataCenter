@@ -10,8 +10,10 @@
 
 ##构建流程
 
-- 获取工程代码 :`git clone https://github.com/QuanCong/DataCenter.git `	
--  `cd DataCenter/data` 执行sql语句还原数据库
+- 获取工程代码 
+`git clone https://github.com/QuanCong/DataCenter.git `	
+- 执行sql语句还原数据库
+`cd DataCenter/data` 
 - 构建数据中心子系统工程代码
 ```
    cd DataCenter/DeployApp_V2
