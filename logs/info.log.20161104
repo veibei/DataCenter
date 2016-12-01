@@ -1,0 +1,99 @@
+2016-11-04 08:40:22 [INFO] remote control connetion established:172.27.62.116:24630
+2016-11-04 12:12:01 [INFO] remote control connetion established:172.27.62.116:35936
+2016-11-04 12:12:01 [INFO] admin@127.0.0.1request stop server
+2016-11-04 12:12:01 [INFO] stopping service
+2016-11-04 12:12:01 [INFO] receice queue stopped...
+2016-11-04 12:12:01 [INFO] send queue thread stopped
+2016-11-04 12:12:01 [INFO] service stopped
+2016-11-04 12:12:01 [INFO] remote control thread stopped Thread[pool-7-thread-4,5,main]
+2016-11-04 12:12:01 [INFO] status upload thread stopped Thread[pool-6-thread-8,5,main]
+2016-11-04 12:12:01 [INFO] DC status monitor stoppedThread[pool-6-thread-2,5,main]
+2016-11-04 12:12:02 [INFO] rate data upload thread stopped:Thread[pool-6-thread-4,5,main]
+2016-11-04 12:12:03 [INFO] check queue deamon thread stopped Thread[pool-6-thread-3,5,main]
+2016-11-04 12:12:10 [INFO] remote control connetion established:172.27.62.116:35941
+2016-11-04 12:12:10 [INFO] admin@127.0.0.1request stop server
+2016-11-04 12:12:10 [INFO] remote control thread stopped Thread[pool-7-thread-4,5,main]
+2016-11-04 12:18:56 [INFO] remote control connetion established:172.27.62.116:36250
+2016-11-04 12:18:56 [INFO] admin@127.0.0.1request stop server
+2016-11-04 12:18:56 [INFO] remote control thread stopped Thread[pool-7-thread-4,5,main]
+2016-11-04 12:19:28 [INFO] Data Center stop from console
+2016-11-04 12:19:36 [INFO] main thread exit,please wait...
+2016-11-04 15:01:36 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Fri Nov 04 15:01:36 CST 2016]; root of context hierarchy
+2016-11-04 15:01:36 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-11-04 15:01:36 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-11-04 15:01:37 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-11-04 15:01:37 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-11-04 15:01:37 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-11-04 15:01:37 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-11-04 15:01:37 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-11-04 15:01:37 [INFO] remote control established
+2016-11-04 15:01:37 [WARN] 未提供Cluster配置信息
+2016-11-04 15:01:37 [INFO]  add socketpool :pool0
+2016-11-04 15:01:37 [INFO] DefaultCache CheckService is start!
+2016-11-04 15:01:37 [INFO] DefaultCache CheckService is start!
+2016-11-04 15:01:37 [INFO]  add memcachedClient :mcClient
+2016-11-04 15:01:37 [INFO] server loading...
+2016-11-04 15:01:37 [INFO] socket service established:172.27.62.116:50116
+2016-11-04 15:01:37 [INFO] temp pool established
+2016-11-04 15:01:37 [INFO] client pool established
+2016-11-04 15:01:37 [INFO] DTU pool established
+2016-11-04 15:01:37 [INFO] receive queue established with length:100
+2016-11-04 15:01:37 [INFO] send queue established with length :100
+2016-11-04 15:01:37 [INFO] client thread pool established
+2016-11-04 15:01:37 [INFO] server receive msg switcher:true
+2016-11-04 15:01:37 [INFO] server send msg switcher:true
+2016-11-04 15:01:37 [INFO] server connction switcher:true
+2016-11-04 15:01:37 [INFO] receive queue established
+2016-11-04 15:01:37 [INFO] send queue established
+2016-11-04 15:01:37 [INFO] check queue established
+2016-11-04 15:01:37 [INFO] status check thread established
+2016-11-04 15:01:37 [INFO] status upload thread established
+2016-11-04 15:01:37 [INFO] rate data thread established
+2016-11-04 15:17:43 [INFO] remote control connetion established:172.27.62.116:4478
+2016-11-04 15:30:05 [INFO] remote control connetion established:172.27.62.116:4781
+2016-11-04 15:33:32 [INFO] remote control connetion established:172.27.62.116:5024
+2016-11-04 15:35:20 [INFO] remote control connetion established:172.27.62.116:5122
+2016-11-04 15:38:11 [INFO] remote control connetion established:172.27.62.116:5229
+2016-11-04 15:41:33 [INFO] remote control connetion established:172.27.62.116:5330
+2016-11-04 15:41:38 [INFO] remote control connetion established:172.27.62.116:5344
+2016-11-04 15:41:40 [INFO] remote control connetion established:172.27.62.116:5347
+2016-11-04 15:41:41 [INFO] remote control connetion established:172.27.62.116:5350
+2016-11-04 15:42:21 [INFO] remote control connetion established:172.27.62.116:5375
+2016-11-04 15:42:21 [INFO] remote control connetion established:172.27.62.116:5377
+2016-11-04 15:42:23 [INFO] remote control connetion established:172.27.62.116:5381
+2016-11-04 15:42:24 [INFO] remote control connetion established:172.27.62.116:5384
+2016-11-04 15:42:26 [INFO] remote control connetion established:172.27.62.116:5389
+2016-11-04 15:42:26 [INFO] remote control connetion established:172.27.62.116:5392
+2016-11-04 15:46:10 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Fri Nov 04 15:46:10 CST 2016]; root of context hierarchy
+2016-11-04 15:46:11 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-11-04 15:46:11 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-11-04 15:46:11 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-11-04 15:46:11 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-11-04 15:46:11 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-11-04 15:46:11 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-11-04 15:46:11 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-11-04 15:46:11 [INFO] remote control established
+2016-11-04 15:46:11 [WARN] 未提供Cluster配置信息
+2016-11-04 15:46:11 [INFO]  add socketpool :pool0
+2016-11-04 15:46:11 [INFO] DefaultCache CheckService is start!
+2016-11-04 15:46:11 [INFO] DefaultCache CheckService is start!
+2016-11-04 15:46:11 [INFO]  add memcachedClient :mcClient
+2016-11-04 15:46:11 [INFO] server loading...
+2016-11-04 15:46:11 [INFO] socket service established:172.27.62.116:50116
+2016-11-04 15:46:11 [INFO] temp pool established
+2016-11-04 15:46:11 [INFO] client pool established
+2016-11-04 15:46:11 [INFO] DTU pool established
+2016-11-04 15:46:11 [INFO] receive queue established with length:100
+2016-11-04 15:46:11 [INFO] send queue established with length :100
+2016-11-04 15:46:11 [INFO] client thread pool established
+2016-11-04 15:46:11 [INFO] server receive msg switcher:true
+2016-11-04 15:46:11 [INFO] server send msg switcher:true
+2016-11-04 15:46:11 [INFO] server connction switcher:true
+2016-11-04 15:46:12 [INFO] receive queue established
+2016-11-04 15:46:12 [INFO] send queue established
+2016-11-04 15:46:12 [INFO] check queue established
+2016-11-04 15:46:12 [INFO] status check thread established
+2016-11-04 15:46:12 [INFO] status upload thread established
+2016-11-04 15:46:12 [INFO] rate data thread established
+2016-11-04 15:47:12 [INFO] remote control connetion established:172.27.62.116:5594
+2016-11-04 16:49:08 [INFO] remote control connetion established:172.27.62.116:7745

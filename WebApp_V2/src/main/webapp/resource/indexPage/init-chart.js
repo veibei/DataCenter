@@ -80,7 +80,7 @@ if ($("#realtimechart").length) {
     var options = {
 
         series: {lines: {show: 1}, lines: {show: 1}},
-        yaxis: {min: 0, max: 30},
+        yaxis: {min: 0, max: 500},
         xaxis: {min: 0, max: 9, show: false},
         colors: ["red", "green"]
     };

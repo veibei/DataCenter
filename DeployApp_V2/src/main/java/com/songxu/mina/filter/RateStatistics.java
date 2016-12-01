@@ -13,7 +13,7 @@ import com.songxu.interfaces.Message;
  * @author songxu
  * @modify 2015-06-28 实现了ApplicationContextAware接口 server的单例方法被替换
  */
-public class RateStatistics extends FilterImplment implements ApplicationContextAware
+public class RateStatistics extends FilterAdapter implements ApplicationContextAware
 {
 	private ApplicationContext ApplicationContext;
 	private Server sever;

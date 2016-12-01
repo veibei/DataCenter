@@ -24,6 +24,18 @@ angular.module("dtucenter").config(['$routeProvider',function ($routeProvider) {
             templateUrl: 'resource/html/user.html',
             controller: 'userPageController'
         })
+        .when('/rate', {
+            templateUrl: 'resource/html/rate.html',
+            controller: 'rateController'
+        })
+        .when('/realtime', {
+            templateUrl: 'resource/html/realtime.html',
+            controller: 'realtimeController'
+        })
+        .when('/history', {
+            templateUrl: 'resource/html/history.html',
+            controller: 'historyController'
+        })
         .otherwise({
             redirectTo: '/main'
         });

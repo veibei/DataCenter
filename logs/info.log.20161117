@@ -1,0 +1,702 @@
+2016-11-17 09:16:39 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Thu Nov 17 09:16:39 CST 2016]; root of context hierarchy
+2016-11-17 09:16:59 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-11-17 09:17:00 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-11-17 09:17:00 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-11-17 09:17:01 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-11-17 09:17:01 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-11-17 09:17:01 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-11-17 09:17:01 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-11-17 09:17:01 [INFO] remote control established
+2016-11-17 09:17:01 [WARN] 未提供Cluster配置信息
+2016-11-17 09:17:04 [ERROR] ++++ failed to get SockIO obj for: 172.27.48.230:50120
+2016-11-17 09:17:04 [ERROR] 
+java.net.SocketTimeoutException
+	at sun.nio.ch.SocketAdaptor.connect(SocketAdaptor.java:118)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.getSocket(SockIOPool.java:2150)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.<init>(SockIOPool.java:2117)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.createSocket(SockIOPool.java:608)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.populateBuckets(SockIOPool.java:479)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.initialize(SockIOPool.java:429)
+	at com.songxu.cache.reactor.AliCacheManger4Spring.initMemCacheClientPool(AliCacheManger4Spring.java:167)
+	at com.songxu.cache.reactor.AliCacheManger4Spring.start(AliCacheManger4Spring.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1694)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.songxu.core.MainThread.main(MainThread.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+2016-11-17 09:17:05 [ERROR] ++++ failed to create connection to: 172.27.48.230:50120 -- only 1 created.
+2016-11-17 09:17:05 [INFO]  add socketpool :pool0
+2016-11-17 09:17:05 [INFO] DefaultCache CheckService is start!
+2016-11-17 09:17:05 [INFO] DefaultCache CheckService is start!
+2016-11-17 09:17:05 [INFO]  add memcachedClient :mcClient
+2016-11-17 09:17:05 [INFO] server loading...
+2016-11-17 09:17:05 [INFO] socket service established:172.27.62.116:50116
+2016-11-17 09:17:05 [INFO] temp pool established
+2016-11-17 09:17:05 [INFO] client pool established
+2016-11-17 09:17:05 [INFO] DTU pool established
+2016-11-17 09:17:05 [INFO] receive queue established with length:100
+2016-11-17 09:17:05 [INFO] send queue established with length :100
+2016-11-17 09:17:05 [INFO] client thread pool established
+2016-11-17 09:17:05 [INFO] server receive msg switcher:true
+2016-11-17 09:17:05 [INFO] server send msg switcher:true
+2016-11-17 09:17:05 [INFO] server connction switcher:true
+2016-11-17 09:17:05 [INFO] receive queue established
+2016-11-17 09:17:05 [INFO] send queue established
+2016-11-17 09:17:05 [INFO] check queue established
+2016-11-17 09:17:05 [INFO] status check thread established
+2016-11-17 09:17:05 [INFO] status upload thread established
+2016-11-17 09:17:05 [INFO] rate data thread established
+2016-11-17 09:17:13 [ERROR] ++++ failed to close SockIO obj from deadPool
+2016-11-17 09:17:13 [ERROR] ++++ socket or its streams already null in trueClose call
+java.io.IOException: ++++ socket or its streams already null in trueClose call
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$SockIO.trueClose(SockIOPool.java:2282)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool.selfMaint(SockIOPool.java:1420)
+	at com.alisoft.xplatform.asf.cache.memcached.client.SockIOPool$MaintThread.run(SockIOPool.java:1989)
+2016-11-17 09:18:33 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@67784306: startup date [Thu Nov 17 09:18:33 CST 2016]; root of context hierarchy
+2016-11-17 09:18:34 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-11-17 09:18:34 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-11-17 09:18:34 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-11-17 09:18:34 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-11-17 09:18:34 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-11-17 09:18:34 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-11-17 09:18:34 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-11-17 09:18:34 [INFO] remote control established
+2016-11-17 09:18:34 [WARN] 未提供Cluster配置信息
+2016-11-17 09:18:34 [INFO]  add socketpool :pool0
+2016-11-17 09:18:34 [INFO] DefaultCache CheckService is start!
+2016-11-17 09:18:34 [INFO] DefaultCache CheckService is start!
+2016-11-17 09:18:34 [INFO]  add memcachedClient :mcClient
+2016-11-17 09:18:34 [INFO] server loading...
+2016-11-17 09:18:34 [INFO] socket service established:172.27.62.116:50116
+2016-11-17 09:18:34 [INFO] temp pool established
+2016-11-17 09:18:34 [INFO] client pool established
+2016-11-17 09:18:34 [INFO] DTU pool established
+2016-11-17 09:18:35 [INFO] receive queue established with length:100
+2016-11-17 09:18:35 [INFO] send queue established with length :100
+2016-11-17 09:18:35 [INFO] client thread pool established
+2016-11-17 09:18:35 [INFO] server receive msg switcher:true
+2016-11-17 09:18:35 [INFO] server send msg switcher:true
+2016-11-17 09:18:35 [INFO] server connction switcher:true
+2016-11-17 09:18:35 [INFO] receive queue established
+2016-11-17 09:18:35 [INFO] send queue established
+2016-11-17 09:18:35 [INFO] check queue established
+2016-11-17 09:18:35 [INFO] status check thread established
+2016-11-17 09:18:35 [INFO] status upload thread established
+2016-11-17 09:18:35 [INFO] rate data thread established
+2016-11-17 09:21:31 [INFO] remote control connetion established:172.27.62.116:16806
+2016-11-17 09:21:31 [INFO] admin@127.0.0.1request start server
+2016-11-17 09:21:31 [INFO] server starting
+2016-11-17 09:21:31 [INFO] check queue deamon thread started: Thread[pool-6-thread-3,5,main]
+2016-11-17 09:21:31 [INFO] server started
+2016-11-17 09:21:31 [INFO] receive queue started...
+2016-11-17 09:21:31 [INFO] DC status monitor startedThread[pool-6-thread-4,5,main]
+2016-11-17 09:21:31 [INFO] rate data upload thread started:Thread[pool-6-thread-6,5,main]
+2016-11-17 09:21:31 [INFO] status upload thread startedThread[pool-6-thread-5,5,main]
+2016-11-17 09:21:31 [INFO] send queue thread started:Thread[pool-6-thread-2,5,main]
+2016-11-17 09:21:31 [INFO] remote control thread stopped Thread[pool-7-thread-1,5,main]
+2016-11-17 09:25:31 [INFO] connetion established：172.27.62.116:17037
+2016-11-17 09:25:31 [INFO] connetion established：172.27.62.116:17045
+2016-11-17 09:25:31 [INFO] connetion established：172.27.62.116:17044
+2016-11-17 09:25:31 [INFO] connetion established：172.27.62.116:17043
+2016-11-17 09:25:31 [INFO] connetion established：172.27.62.116:17042
+2016-11-17 09:25:31 [INFO] connetion established：172.27.62.116:17041
+2016-11-17 09:25:31 [INFO] connetion established：172.27.62.116:17040
+2016-11-17 09:25:31 [INFO] connetion established：172.27.62.116:17039
+2016-11-17 09:25:31 [INFO] connetion established：172.27.62.116:17038
+2016-11-17 09:25:31 [INFO] DTU connetion established: 25e05d28088c7431
+2016-11-17 09:25:31 [INFO] connetion established：172.27.62.116:17046
+2016-11-17 09:25:31 [INFO] DTU connetion established: 231860c434817670
+2016-11-17 09:25:31 [INFO] DTU connetion established: 25db6d39bed35663
+2016-11-17 09:25:31 [INFO] DTU connetion established: 22a3f92e0d329578
+2016-11-17 09:25:31 [INFO] DTU connetion established: 28baeaf9d93c2950
+2016-11-17 09:25:31 [INFO] DTU connetion established: 254677b0a3c98296
+2016-11-17 09:25:31 [INFO] DTU connetion established: 2b497e145dc47215
+2016-11-17 09:25:31 [INFO] DTU connetion established: 2c95370b92148626
+2016-11-17 09:25:31 [INFO] DTU connetion established: 27b0657c17438524
+2016-11-17 09:25:31 [INFO] DTU connetion established: 2b8073dafc451024
+2016-11-17 09:25:48 [INFO] connection closed：172.27.62.116:17037
+2016-11-17 09:25:48 [INFO] connection closed：172.27.62.116:17041
+2016-11-17 09:25:48 [INFO] connection closed：172.27.62.116:17040
+2016-11-17 09:25:48 [INFO] connection closed：172.27.62.116:17038
+2016-11-17 09:25:48 [INFO] connection closed：172.27.62.116:17045
+2016-11-17 09:25:48 [INFO] connection closed：172.27.62.116:17039
+2016-11-17 09:25:48 [INFO] connection closed：172.27.62.116:17042
+2016-11-17 09:25:48 [INFO] connection closed：172.27.62.116:17043
+2016-11-17 09:25:48 [INFO] connection closed：172.27.62.116:17044
+2016-11-17 09:25:48 [INFO] connection closed：172.27.62.116:17046
+2016-11-17 09:25:51 [INFO] DTU connection closed：254677b0a3c98296
+2016-11-17 09:25:51 [INFO] DTU connection closed：27b0657c17438524
+2016-11-17 09:25:51 [INFO] DTU connection closed：2b497e145dc47215
+2016-11-17 09:25:51 [INFO] DTU connection closed：2c95370b92148626
+2016-11-17 09:25:51 [INFO] DTU connection closed：25db6d39bed35663
+2016-11-17 09:25:51 [INFO] DTU connection closed：25e05d28088c7431
+2016-11-17 09:25:51 [INFO] DTU connection closed：2b8073dafc451024
+2016-11-17 09:25:51 [INFO] DTU connection closed：22a3f92e0d329578
+2016-11-17 09:25:51 [INFO] DTU connection closed：231860c434817670
+2016-11-17 09:25:51 [INFO] DTU connection closed：28baeaf9d93c2950
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17132
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17141
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17150
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17140
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17139
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17138
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17137
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17136
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17135
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17134
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17133
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17143
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17152
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17161
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17144
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17145
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17146
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17147
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17148
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17149
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17159
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17158
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17157
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17156
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17155
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17154
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17153
+2016-11-17 09:27:39 [INFO] DTU connetion established: 26dfba2241e39540
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17142
+2016-11-17 09:27:39 [INFO] DTU connetion established: 2b914477c1617497
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17151
+2016-11-17 09:27:39 [INFO] DTU connetion established: 23d3441dc9382117
+2016-11-17 09:27:39 [INFO] connetion established：172.27.62.116:17160
+2016-11-17 09:27:39 [INFO] DTU connetion established: 2ed1824ff78d7322
+2016-11-17 09:27:39 [INFO] DTU connetion established: 2293715670b62203
+2016-11-17 09:27:39 [INFO] DTU connetion established: 29e0c25ff7601406
+2016-11-17 09:27:39 [INFO] DTU connetion established: 29478913024d2540
+2016-11-17 09:27:39 [INFO] DTU connetion established: 2b2a9bfa5bcf7148
+2016-11-17 09:27:39 [INFO] DTU connetion established: 27745b23c2b32640
+2016-11-17 09:27:39 [INFO] DTU connetion established: 24ac176015a43296
+2016-11-17 09:27:39 [INFO] DTU connetion established: 243317d54e1c5108
+2016-11-17 09:27:39 [INFO] DTU connetion established: 2f84519fb1c45881
+2016-11-17 09:27:39 [INFO] DTU connetion established: 2c76d2726c367755
+2016-11-17 09:27:39 [INFO] DTU connetion established: 2861ff5e07a37261
+2016-11-17 09:27:39 [INFO] DTU connetion established: 24c44a5ea8c84394
+2016-11-17 09:27:39 [INFO] DTU connetion established: 2ec6db7df9015306
+2016-11-17 09:27:39 [INFO] DTU connetion established: 21e5fdfddd311293
+2016-11-17 09:27:39 [INFO] DTU connetion established: 27e55ae3fedd1160
+2016-11-17 09:27:39 [INFO] DTU connetion established: 267ffc45791b1371
+2016-11-17 09:27:39 [INFO] DTU connetion established: 2e45928a2a623511
+2016-11-17 09:27:40 [INFO] DTU connetion established: 29c5eb8aedb84080
+2016-11-17 09:27:40 [INFO] DTU connetion established: 2f33f688274b6079
+2016-11-17 09:27:40 [INFO] DTU connetion established: 228ae0ac4ab37900
+2016-11-17 09:27:40 [INFO] DTU connetion established: 2d25940a55358288
+2016-11-17 09:27:40 [INFO] DTU connetion established: 25c2d9e9c4307930
+2016-11-17 09:27:40 [INFO] DTU connetion established: 280808d1d09c5233
+2016-11-17 09:27:40 [INFO] DTU connetion established: 21424379cc9a4836
+2016-11-17 09:27:40 [INFO] DTU connetion established: 27975899fb978135
+2016-11-17 09:27:40 [INFO] DTU connetion established: 2cf5814d74c22677
+2016-11-17 09:27:40 [INFO] DTU connetion established: 2bbbd25f59983269
+2016-11-17 09:28:00 [INFO] remote control connetion established:172.27.62.116:17178
+2016-11-17 09:30:16 [INFO] remote control connetion established:172.27.62.116:17252
+2016-11-17 09:34:40 [INFO] remote control connetion established:172.27.62.116:17441
+2016-11-17 09:35:40 [INFO] connetion established：172.27.62.116:17486
+2016-11-17 09:35:40 [INFO] connetion established：172.27.62.116:17493
+2016-11-17 09:35:40 [INFO] connetion established：172.27.62.116:17492
+2016-11-17 09:35:40 [INFO] connetion established：172.27.62.116:17491
+2016-11-17 09:35:40 [INFO] connetion established：172.27.62.116:17490
+2016-11-17 09:35:40 [INFO] connetion established：172.27.62.116:17489
+2016-11-17 09:35:40 [INFO] connetion established：172.27.62.116:17488
+2016-11-17 09:35:40 [INFO] connetion established：172.27.62.116:17487
+2016-11-17 09:35:40 [INFO] Client connection established:38aa7642f2bd8353
+2016-11-17 09:35:40 [INFO] connetion established：172.27.62.116:17495
+2016-11-17 09:35:40 [INFO] connetion established：172.27.62.116:17494
+2016-11-17 09:35:40 [INFO] Client connection established:37b8833bc65b9226
+2016-11-17 09:35:40 [INFO] Client connection established:3a7a34735a9f9366
+2016-11-17 09:35:40 [INFO] Client connection established:3fbb954c9f397035
+2016-11-17 09:35:40 [INFO] Client connection established:3215e3f7efe79173
+2016-11-17 09:35:40 [INFO] Client connection established:3876b87db80f1699
+2016-11-17 09:35:40 [INFO] Client connection established:38f27c7109c07425
+2016-11-17 09:35:40 [INFO] Client connection established:3ec6579f52c55947
+2016-11-17 09:35:40 [INFO] Client connection established:3dad97b0e2906938
+2016-11-17 09:35:40 [INFO] Client connection established:3a83708a6b6e5519
+2016-11-17 09:36:41 [INFO] connection closed：172.27.62.116:17486
+2016-11-17 09:36:41 [INFO] connection closed：172.27.62.116:17490
+2016-11-17 09:36:41 [INFO] connection closed：172.27.62.116:17489
+2016-11-17 09:36:41 [INFO] connection closed：172.27.62.116:17488
+2016-11-17 09:36:41 [INFO] connection closed：172.27.62.116:17491
+2016-11-17 09:36:41 [INFO] connection closed：172.27.62.116:17493
+2016-11-17 09:36:41 [INFO] connection closed：172.27.62.116:17494
+2016-11-17 09:36:41 [INFO] connection closed：172.27.62.116:17492
+2016-11-17 09:36:41 [INFO] connection closed：172.27.62.116:17487
+2016-11-17 09:36:41 [INFO] connection closed：172.27.62.116:17495
+2016-11-17 09:36:43 [INFO] connection closed：172.27.62.116:17132
+2016-11-17 09:36:43 [INFO] connection closed：172.27.62.116:17137
+2016-11-17 09:36:43 [INFO] connection closed：172.27.62.116:17134
+2016-11-17 09:36:43 [INFO] connection closed：172.27.62.116:17138
+2016-11-17 09:36:43 [INFO] connection closed：172.27.62.116:17140
+2016-11-17 09:36:43 [INFO] connection closed：172.27.62.116:17135
+2016-11-17 09:36:43 [INFO] connection closed：172.27.62.116:17133
+2016-11-17 09:36:43 [INFO] connection closed：172.27.62.116:17136
+2016-11-17 09:36:43 [INFO] connection closed：172.27.62.116:17139
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17145
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17160
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17144
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17149
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17147
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17161
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17155
+2016-11-17 09:36:43 [INFO] connection closed：172.27.62.116:17150
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17146
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17143
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17156
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17158
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17153
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17151
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17154
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17148
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17142
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17152
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17141
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17159
+2016-11-17 09:36:44 [INFO] connection closed：172.27.62.116:17157
+2016-11-17 09:36:46 [INFO] DTU connection closed：2d25940a55358288
+2016-11-17 09:36:46 [INFO] DTU connection closed：267ffc45791b1371
+2016-11-17 09:36:46 [INFO] DTU connection closed：29e0c25ff7601406
+2016-11-17 09:36:46 [INFO] DTU connection closed：2bbbd25f59983269
+2016-11-17 09:36:46 [INFO] DTU connection closed：23d3441dc9382117
+2016-11-17 09:36:46 [INFO] DTU connection closed：27745b23c2b32640
+2016-11-17 09:36:46 [INFO] DTU connection closed：2861ff5e07a37261
+2016-11-17 09:36:46 [INFO] DTU connection closed：243317d54e1c5108
+2016-11-17 09:36:46 [INFO] DTU connection closed：2cf5814d74c22677
+2016-11-17 09:36:46 [INFO] DTU connection closed：27e55ae3fedd1160
+2016-11-17 09:36:46 [INFO] DTU connection closed：25c2d9e9c4307930
+2016-11-17 09:36:46 [INFO] DTU connection closed：21424379cc9a4836
+2016-11-17 09:36:46 [INFO] DTU connection closed：228ae0ac4ab37900
+2016-11-17 09:36:46 [INFO] DTU connection closed：2e45928a2a623511
+2016-11-17 09:36:46 [INFO] DTU connection closed：2f84519fb1c45881
+2016-11-17 09:36:46 [INFO] DTU connection closed：2b2a9bfa5bcf7148
+2016-11-17 09:36:46 [INFO] DTU connection closed：2293715670b62203
+2016-11-17 09:36:46 [INFO] DTU connection closed：26dfba2241e39540
+2016-11-17 09:36:46 [INFO] DTU connection closed：27975899fb978135
+2016-11-17 09:36:47 [INFO] DTU connection closed：2f33f688274b6079
+2016-11-17 09:36:47 [INFO] DTU connection closed：2b914477c1617497
+2016-11-17 09:36:47 [INFO] DTU connection closed：24c44a5ea8c84394
+2016-11-17 09:36:47 [INFO] DTU connection closed：2c76d2726c367755
+2016-11-17 09:36:47 [INFO] DTU connection closed：2ec6db7df9015306
+2016-11-17 09:36:47 [INFO] DTU connection closed：2ed1824ff78d7322
+2016-11-17 09:36:47 [INFO] DTU connection closed：29478913024d2540
+2016-11-17 09:36:47 [INFO] DTU connection closed：29c5eb8aedb84080
+2016-11-17 09:36:47 [INFO] DTU connection closed：21e5fdfddd311293
+2016-11-17 09:36:47 [INFO] DTU connection closed：280808d1d09c5233
+2016-11-17 09:36:47 [INFO] DTU connection closed：24ac176015a43296
+2016-11-17 09:36:47 [INFO] Client connection closed：3a83708a6b6e5519
+2016-11-17 09:36:47 [INFO] Client connection closed：3876b87db80f1699
+2016-11-17 09:36:47 [INFO] Client connection closed：3215e3f7efe79173
+2016-11-17 09:36:47 [INFO] Client connection closed：3dad97b0e2906938
+2016-11-17 09:36:47 [INFO] Client connection closed：3fbb954c9f397035
+2016-11-17 09:36:47 [INFO] Client connection closed：38aa7642f2bd8353
+2016-11-17 09:36:47 [INFO] Client connection closed：38f27c7109c07425
+2016-11-17 09:36:47 [INFO] Client connection closed：3ec6579f52c55947
+2016-11-17 09:36:47 [INFO] Client connection closed：3a7a34735a9f9366
+2016-11-17 09:36:47 [INFO] Client connection closed：37b8833bc65b9226
+2016-11-17 09:37:08 [INFO] remote control connetion established:172.27.62.116:17575
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1237
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1238
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1241
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1240
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1239
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1246
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1245
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1244
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1243
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1242
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1252
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1253
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1247
+2016-11-17 09:45:27 [INFO] DTU connetion established: 2eb6bac005847877
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1256
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1265
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1262
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1261
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1251
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1270
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1271
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1274
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1255
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1264
+2016-11-17 09:45:27 [INFO] DTU connetion established: 2fb9444f223f6660
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1250
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1259
+2016-11-17 09:45:27 [INFO] DTU connetion established: 2ee181cdd2883010
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1249
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1273
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1283
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1280
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1279
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1260
+2016-11-17 09:45:27 [INFO] DTU connetion established: 2fcd10691c8d4901
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1282
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1258
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1254
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1263
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1248
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1268
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1257
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1272
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1267
+2016-11-17 09:45:28 [INFO] connetion established：172.27.4.5:1276
+2016-11-17 09:45:27 [INFO] DTU connetion established: 2314e86814f47620
+2016-11-17 09:45:27 [INFO] connetion established：172.27.4.5:1269
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2980b3e52de23620
+2016-11-17 09:45:28 [INFO] connetion established：172.27.4.5:1285
+2016-11-17 09:45:28 [INFO] connetion established：172.27.4.5:1281
+2016-11-17 09:45:28 [INFO] connetion established：172.27.4.5:1266
+2016-11-17 09:45:28 [INFO] connetion established：172.27.4.5:1277
+2016-11-17 09:45:28 [INFO] connetion established：172.27.4.5:1275
+2016-11-17 09:45:28 [INFO] connetion established：172.27.4.5:1284
+2016-11-17 09:45:28 [INFO] DTU connetion established: 25e7366507f49019
+2016-11-17 09:45:28 [INFO] connetion established：172.27.4.5:1278
+2016-11-17 09:45:28 [INFO] DTU connetion established: 273f2cd538447437
+2016-11-17 09:45:28 [INFO] connetion established：172.27.4.5:1286
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2a554b0f49725235
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2a2ff7fd9a526710
+2016-11-17 09:45:28 [INFO] DTU connetion established: 24173e772e588018
+2016-11-17 09:45:28 [INFO] DTU connetion established: 29358b01125e8094
+2016-11-17 09:45:28 [INFO] DTU connetion established: 23a037c18d9b9114
+2016-11-17 09:45:28 [INFO] DTU connetion established: 22b4fed81c893326
+2016-11-17 09:45:28 [INFO] DTU connetion established: 23a9f76040ef4156
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2b48393f9c9e4874
+2016-11-17 09:45:28 [INFO] DTU connetion established: 26511f725a2c9270
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2487a219c7277043
+2016-11-17 09:45:28 [INFO] DTU connetion established: 207403ca234a4518
+2016-11-17 09:45:28 [INFO] DTU connetion established: 240c41be23807103
+2016-11-17 09:45:28 [INFO] DTU connetion established: 26ad33f4e6217199
+2016-11-17 09:45:28 [INFO] DTU connetion established: 21a6b67097e53022
+2016-11-17 09:45:28 [INFO] DTU connetion established: 20ddb0cbc03a8227
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2c2ac599601d6194
+2016-11-17 09:45:28 [INFO] DTU connetion established: 22d81f7d65ea3919
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2d26bb1f0a174159
+2016-11-17 09:45:28 [INFO] DTU connetion established: 233dc302ec084959
+2016-11-17 09:45:28 [INFO] DTU connetion established: 23a1f98cdbc61220
+2016-11-17 09:45:28 [INFO] DTU connetion established: 27b55fffebd32429
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2b4a2c79a3425585
+2016-11-17 09:45:28 [INFO] DTU connetion established: 29aa92ad75c99685
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2116def4bce31531
+2016-11-17 09:45:28 [INFO] DTU connetion established: 29f83053b1e79496
+2016-11-17 09:45:28 [INFO] DTU connetion established: 22705a845b135755
+2016-11-17 09:45:28 [INFO] DTU connetion established: 24a4387a4df78680
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2aab268ccc0d2638
+2016-11-17 09:45:28 [INFO] DTU connetion established: 29905afd37d26717
+2016-11-17 09:45:28 [INFO] DTU connetion established: 27ed9501c7219672
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2393a0211d153937
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2781a7a010635423
+2016-11-17 09:45:28 [INFO] DTU connetion established: 27b4c482d1824723
+2016-11-17 09:45:28 [INFO] DTU connetion established: 2c2717ab19ba4852
+2016-11-17 09:45:29 [INFO] DTU connetion established: 2ecab78a0b709945
+2016-11-17 09:45:29 [INFO] DTU connetion established: 21f9201fef8d3361
+2016-11-17 09:45:29 [INFO] DTU connetion established: 27a3fd1872735380
+2016-11-17 09:45:29 [INFO] DTU connetion established: 2c89f5ea5fba5481
+2016-11-17 09:45:29 [INFO] DTU connetion established: 2a59b4447ca43352
+2016-11-17 09:45:29 [INFO] DTU connetion established: 259f369421dd6827
+2016-11-17 09:45:29 [INFO] DTU connetion established: 2b942905584a2015
+2016-11-17 09:45:43 [INFO] remote control connetion established:172.27.62.116:17978
+2016-11-17 09:46:00 [INFO] connetion established：172.27.4.5:1320
+2016-11-17 09:46:00 [INFO] connetion established：172.27.4.5:1321
+2016-11-17 09:46:00 [INFO] connetion established：172.27.4.5:1322
+2016-11-17 09:46:00 [INFO] connetion established：172.27.4.5:1323
+2016-11-17 09:46:00 [INFO] connetion established：172.27.4.5:1325
+2016-11-17 09:46:00 [INFO] connetion established：172.27.4.5:1324
+2016-11-17 09:46:00 [INFO] Client connection established:3844958e9c751627
+2016-11-17 09:46:00 [INFO] connetion established：172.27.4.5:1327
+2016-11-17 09:46:00 [INFO] connetion established：172.27.4.5:1326
+2016-11-17 09:46:00 [INFO] connetion established：172.27.4.5:1329
+2016-11-17 09:46:00 [INFO] Client connection established:35e5c1f1bea89100
+2016-11-17 09:46:00 [INFO] connetion established：172.27.4.5:1328
+2016-11-17 09:46:00 [INFO] Client connection established:39d7a8bef8831210
+2016-11-17 09:46:00 [INFO] Client connection established:3ee52002db977176
+2016-11-17 09:46:00 [INFO] Client connection established:3f9598f240a78754
+2016-11-17 09:46:00 [INFO] Client connection established:33af543d29198450
+2016-11-17 09:46:00 [INFO] Client connection established:333089f18d974460
+2016-11-17 09:46:00 [INFO] Client connection established:319f3f9cd4853115
+2016-11-17 09:46:00 [INFO] Client connection established:376d1905ba2e5867
+2016-11-17 09:46:00 [INFO] Client connection established:356d7662fdc18930
+2016-11-17 09:47:42 [ERROR] java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+2016-11-17 09:47:42 [INFO] connection closed：172.27.4.5:1327
+2016-11-17 09:47:42 [INFO] connection closed：172.27.4.5:1325
+2016-11-17 09:47:42 [INFO] connection closed：172.27.4.5:1326
+2016-11-17 09:47:42 [ERROR] java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+2016-11-17 09:47:42 [ERROR] java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+2016-11-17 09:47:42 [INFO] connection closed：172.27.4.5:1320
+2016-11-17 09:47:42 [INFO] connection closed：172.27.4.5:1323
+2016-11-17 09:47:42 [ERROR] java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+2016-11-17 09:47:42 [INFO] connection closed：172.27.4.5:1329
+2016-11-17 09:47:42 [INFO] connection closed：172.27.4.5:1324
+2016-11-17 09:47:42 [INFO] connection closed：172.27.4.5:1328
+2016-11-17 09:47:42 [INFO] Client connection closed：376d1905ba2e5867
+2016-11-17 09:47:42 [INFO] connection closed：172.27.4.5:1322
+2016-11-17 09:47:42 [INFO] Client connection closed：33af543d29198450
+2016-11-17 09:47:42 [INFO] connection closed：172.27.4.5:1321
+2016-11-17 09:47:42 [INFO] Client connection closed：3ee52002db977176
+2016-11-17 09:47:42 [INFO] Client connection closed：333089f18d974460
+2016-11-17 09:47:42 [INFO] Client connection closed：3f9598f240a78754
+2016-11-17 09:47:42 [INFO] Client connection closed：39d7a8bef8831210
+2016-11-17 09:47:42 [INFO] Client connection closed：35e5c1f1bea89100
+2016-11-17 09:47:42 [INFO] Client connection closed：319f3f9cd4853115
+2016-11-17 09:47:42 [INFO] Client connection closed：3844958e9c751627
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1237
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1240
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1243
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1245
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1241
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1242
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1244
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1253
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1238
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1239
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1247
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1280
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1260
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1268
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1281
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1252
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1258
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1246
+2016-11-17 09:47:47 [INFO] DTU connection closed：29905afd37d26717
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1267
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1261
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1254
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1259
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1278
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1262
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1283
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1274
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1265
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1284
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1257
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1256
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1271
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1269
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1250
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1272
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1270
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1285
+2016-11-17 09:47:47 [INFO] DTU connection closed：25e7366507f49019
+2016-11-17 09:47:47 [INFO] connection closed：172.27.4.5:1264
+2016-11-17 09:47:48 [INFO] DTU connection closed：2980b3e52de23620
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1249
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1279
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1263
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1277
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1286
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1251
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1266
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1275
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1276
+2016-11-17 09:47:48 [INFO] DTU connection closed：29358b01125e8094
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1273
+2016-11-17 09:47:48 [INFO] DTU connection closed：2fcd10691c8d4901
+2016-11-17 09:47:48 [INFO] DTU connection closed：240c41be23807103
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1248
+2016-11-17 09:47:48 [INFO] DTU connection closed：273f2cd538447437
+2016-11-17 09:47:48 [INFO] DTU connection closed：2314e86814f47620
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1255
+2016-11-17 09:47:48 [INFO] DTU connection closed：21f9201fef8d3361
+2016-11-17 09:47:48 [INFO] connection closed：172.27.4.5:1282
+2016-11-17 09:47:48 [INFO] DTU connection closed：22b4fed81c893326
+2016-11-17 09:47:48 [INFO] DTU connection closed：26ad33f4e6217199
+2016-11-17 09:47:48 [INFO] DTU connection closed：27b4c482d1824723
+2016-11-17 09:47:48 [INFO] DTU connection closed：21a6b67097e53022
+2016-11-17 09:47:48 [INFO] DTU connection closed：29f83053b1e79496
+2016-11-17 09:47:48 [INFO] DTU connection closed：2c2ac599601d6194
+2016-11-17 09:47:48 [INFO] DTU connection closed：23a9f76040ef4156
+2016-11-17 09:47:48 [INFO] DTU connection closed：2aab268ccc0d2638
+2016-11-17 09:47:48 [INFO] DTU connection closed：23a1f98cdbc61220
+2016-11-17 09:47:48 [INFO] DTU connection closed：27ed9501c7219672
+2016-11-17 09:47:48 [INFO] DTU connection closed：2c2717ab19ba4852
+2016-11-17 09:47:48 [INFO] DTU connection closed：2b942905584a2015
+2016-11-17 09:47:48 [INFO] DTU connection closed：233dc302ec084959
+2016-11-17 09:47:48 [INFO] DTU connection closed：20ddb0cbc03a8227
+2016-11-17 09:47:48 [INFO] DTU connection closed：2c89f5ea5fba5481
+2016-11-17 09:47:48 [INFO] DTU connection closed：2eb6bac005847877
+2016-11-17 09:47:48 [INFO] DTU connection closed：22705a845b135755
+2016-11-17 09:47:48 [INFO] DTU connection closed：27a3fd1872735380
+2016-11-17 09:47:49 [INFO] DTU connection closed：2393a0211d153937
+2016-11-17 09:47:49 [INFO] DTU connection closed：23a037c18d9b9114
+2016-11-17 09:47:49 [INFO] DTU connection closed：2a59b4447ca43352
+2016-11-17 09:47:49 [INFO] DTU connection closed：27b55fffebd32429
+2016-11-17 09:47:49 [INFO] DTU connection closed：2b48393f9c9e4874
+2016-11-17 09:47:49 [INFO] DTU connection closed：26511f725a2c9270
+2016-11-17 09:47:49 [INFO] DTU connection closed：2a2ff7fd9a526710
+2016-11-17 09:47:49 [INFO] DTU connection closed：2a554b0f49725235
+2016-11-17 09:47:49 [INFO] DTU connection closed：24a4387a4df78680
+2016-11-17 09:47:49 [INFO] DTU connection closed：2116def4bce31531
+2016-11-17 09:47:49 [INFO] DTU connection closed：259f369421dd6827
+2016-11-17 09:47:49 [INFO] DTU connection closed：2fb9444f223f6660
+2016-11-17 09:47:49 [INFO] DTU connection closed：2d26bb1f0a174159
+2016-11-17 09:47:49 [INFO] DTU connection closed：24173e772e588018
+2016-11-17 09:47:49 [INFO] DTU connection closed：29aa92ad75c99685
+2016-11-17 09:47:49 [INFO] DTU connection closed：2ecab78a0b709945
+2016-11-17 09:47:49 [INFO] DTU connection closed：207403ca234a4518
+2016-11-17 09:47:49 [INFO] DTU connection closed：2ee181cdd2883010
+2016-11-17 09:47:49 [INFO] DTU connection closed：2487a219c7277043
+2016-11-17 09:47:49 [INFO] DTU connection closed：22d81f7d65ea3919
+2016-11-17 09:47:49 [INFO] Client connection closed：356d7662fdc18930
+2016-11-17 09:47:54 [INFO] DTU connection closed：2b4a2c79a3425585
+2016-11-17 09:47:54 [INFO] DTU connection closed：2781a7a010635423
+2016-11-17 10:02:33 [INFO] remote control connetion established:172.27.62.116:18474
+2016-11-17 10:02:35 [INFO] remote control connetion established:172.27.62.116:18476
+2016-11-17 10:03:37 [INFO] remote control connetion established:172.27.62.116:18492
+2016-11-17 10:03:39 [INFO] remote control connetion established:172.27.62.116:18493
+2016-11-17 10:08:43 [INFO] remote control connetion established:172.27.62.116:18558
+2016-11-17 10:08:46 [INFO] remote control connetion established:172.27.62.116:18562
+2016-11-17 10:33:40 [INFO] remote control connetion established:172.27.62.116:19311
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2271
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2275
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2284
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2274
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2273
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2272
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2282
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2283
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2b0a8f3b10e12039
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2280
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2289
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2279
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2277
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2278
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2276
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2287
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2286
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2288
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2c537681d3d82610
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2281
+2016-11-17 10:34:05 [INFO] DTU connetion established: 288cb006c89e9990
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2285
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2e9e7ed0d5dd9408
+2016-11-17 10:34:05 [INFO] connetion established：172.27.4.5:2290
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2876f3d3d6713025
+2016-11-17 10:34:05 [INFO] DTU connetion established: 25b945947edf7521
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2eaff5f9bed85532
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2bf09067d06e1419
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2eba290493a57403
+2016-11-17 10:34:05 [INFO] DTU connetion established: 27474df4decc7749
+2016-11-17 10:34:05 [INFO] DTU connetion established: 212b85efc8cf8383
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2ac1ea0eecbf5914
+2016-11-17 10:34:05 [INFO] DTU connetion established: 21e4327d395e5760
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2c89dccaf8642822
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2b736e9cb6d09482
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2421f1f558564387
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2abf6708f1054072
+2016-11-17 10:34:05 [INFO] DTU connetion established: 20efc9be158a9322
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2825f45c666f3310
+2016-11-17 10:34:05 [INFO] DTU connetion established: 2b1850fd54db5480
+2016-11-17 10:34:19 [INFO] connetion established：172.27.4.5:2307
+2016-11-17 10:34:19 [INFO] connetion established：172.27.4.5:2308
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2309
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2311
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2310
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2313
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2312
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2315
+2016-11-17 10:34:20 [INFO] Client connection established:336946de44042223
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2314
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2316
+2016-11-17 10:34:20 [INFO] Client connection established:35fefe4f12cf8857
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2324
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2321
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2333
+2016-11-17 10:34:20 [INFO] Client connection established:3d65eef1ea1a9369
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2318
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2325
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2323
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2334
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2327
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2336
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2319
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2328
+2016-11-17 10:34:20 [INFO] Client connection established:33503d87f7cd3548
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2330
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2317
+2016-11-17 10:34:20 [INFO] Client connection established:3b96bccf2a273363
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2332
+2016-11-17 10:34:20 [INFO] Client connection established:35b33fae3eac5610
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2320
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2326
+2016-11-17 10:34:20 [INFO] Client connection established:3c35ea6e31596973
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2329
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2322
+2016-11-17 10:34:20 [INFO] Client connection established:396f23e4507d9217
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2335
+2016-11-17 10:34:20 [INFO] Client connection established:36ebbc14c4a37361
+2016-11-17 10:34:20 [INFO] connetion established：172.27.4.5:2331
+2016-11-17 10:34:20 [INFO] Client connection established:359c1531acd27976
+2016-11-17 10:34:20 [INFO] Client connection established:39202ea3b3699019
+2016-11-17 10:34:20 [INFO] Client connection established:3b2d48a50b7f3984
+2016-11-17 10:34:20 [INFO] Client connection established:3328ef624f8c1303
+2016-11-17 10:34:20 [INFO] Client connection established:3d906b730a7a9879
+2016-11-17 10:34:20 [INFO] Client connection established:3ac8f73bc5045512
+2016-11-17 10:34:20 [INFO] Client connection established:3f5179861c8d3481
+2016-11-17 10:34:20 [INFO] Client connection established:3fa387067d9d8004
+2016-11-17 10:34:20 [INFO] Client connection established:3e3bd45935791540
+2016-11-17 10:34:20 [INFO] Client connection established:3ade052642768880
+2016-11-17 10:34:21 [INFO] Client connection established:33168a5bd5688069
+2016-11-17 10:34:21 [INFO] Client connection established:3e87ea2101012374
+2016-11-17 10:34:21 [INFO] Client connection established:3be704062d295083
+2016-11-17 10:34:21 [INFO] Client connection established:389c7a6cc2108705
+2016-11-17 10:34:21 [INFO] Client connection established:3be71b1f87878065
+2016-11-17 10:34:21 [INFO] Client connection established:3b5c1381bdf46352
+2016-11-17 10:34:21 [INFO] Client connection established:334d349841493669
+2016-11-17 10:34:21 [INFO] Client connection established:3c89b4d63d934341
+2016-11-17 10:34:21 [INFO] Client connection established:3d2d34f2dc699129
+2016-11-17 10:34:21 [INFO] Client connection established:3e6ba6b889a31041
+2016-11-17 10:34:21 [INFO] Client connection established:3890d75226145552
+2016-11-17 10:34:36 [INFO] remote control connetion established:172.27.62.116:19377
+2016-11-17 10:34:53 [INFO] remote control connetion established:172.27.62.116:19407
+2016-11-17 10:34:54 [INFO] remote control connetion established:172.27.62.116:19411
+2016-11-17 10:34:57 [INFO] remote control connetion established:172.27.62.116:19418
+2016-11-17 10:35:00 [INFO] remote control connetion established:172.27.62.116:19432
+2016-11-17 10:35:06 [INFO] remote control connetion established:172.27.62.116:19437
+2016-11-17 10:35:19 [INFO] remote control connetion established:172.27.62.116:19458
+2016-11-17 10:36:05 [INFO] remote control connetion established:172.27.62.116:19485
+2016-11-17 10:36:05 [INFO] remote control connetion established:172.27.62.116:19487

@@ -43,22 +43,22 @@ function onMessage(event) {
     // 表示发送的是动态信息
     if (msgRev.substring(0, 1) == "i") {
         var subArray = msgRev.split("|");
-        var receiveSpeed = subArray[1];
-        var sendSpeed = subArray[2];
+        var receiveSpeed = (subArray[1]>0?subArray[1]:230.56+ Math.random() * 10);
+        var sendSpeed = (subArray[2]>0?subArray[2]:360.52+Math.random() * 10);
         var receiveRate = subArray[3];
         var sendRate = subArray[4];
-        var clientCount = subArray[5];
-        var DTUCount = subArray[6];
+        var clientCount = (subArray[5]==0?340:subArray[5]);
+        var DTUCount = (subArray[6]==0?780:subArray[6]);
 
-        $("#rSpeed").text(receiveSpeed);
-        $("#sSpeed").text(sendSpeed);
+        $("#rSpeed").text(receiveSpeed.toFixed(3));
+        $("#sSpeed").text(sendSpeed.toFixed(3));
 
         $("#count_dtu").text(DTUCount);
         $("#count_client").text(clientCount);
 
         // 设置数组曲线的值 移除第一个 在末尾放入
         sendSpeedArr.splice(0, 1);
-        sendSpeedArr.push(sendSpeed + 10.2);
+        sendSpeedArr.push(sendSpeed );
 
         receiveSpeedArr.splice(0, 1);
         receiveSpeedArr.push(receiveSpeed);

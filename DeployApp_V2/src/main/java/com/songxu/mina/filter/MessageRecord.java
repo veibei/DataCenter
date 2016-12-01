@@ -10,7 +10,7 @@ import com.songxu.interfaces.Message;
  * @author songxu
  *
  */
-public class MessageRecord extends FilterImplment
+public class MessageRecord extends FilterAdapter
 {
 	private static Logger logger=Logger.getLogger(MessageRecord.class);
 	

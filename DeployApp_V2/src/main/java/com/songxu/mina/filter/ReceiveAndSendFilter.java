@@ -13,7 +13,7 @@ import com.songxu.core.Server;
  * @author songxu
  *
  */
-public class ReceiveAndSendFilter extends FilterImplment implements ApplicationContextAware
+public class ReceiveAndSendFilter extends FilterAdapter implements ApplicationContextAware
 {
 	private static Logger   logger=Logger.getLogger(ReceiveAndSendFilter.class);
 	private ApplicationContext application;

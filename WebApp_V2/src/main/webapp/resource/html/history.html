@@ -1,0 +1,97 @@
+<style>
+
+</style>
+<!--flot-->
+<script src="resource/common/js/jquery.flot.min.js"></script>
+<script src="resource/common/js/jquery.flot.time.min.js"></script>
+<!--user-->
+<script src="resource/history/history.js"></script>
+
+<section class="content-header">
+    <h1>
+        历史数据
+        <small> history data</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li>请选择监测组：
+            <select id='monitor_group'>
+                <option value="凌水码头-2">凌水码头</option>
+                <option value="大连石化-6">大连石化</option>
+                <option value="广西石化-7">广西石化</option>
+                <option value="绥中炼油厂-4">绥中炼油厂</option>
+            </select>
+        </li>
+    </ol>
+</section>
+
+
+<section class="content">
+    <div class="row" >
+        <div class="col-xs-12">
+            <!-- interactive chart -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <i class="fa fa-bar-chart-o"></i>
+                    <h3 class="box-title" id='chart_title'>历史监测数据</h3>
+                    <div class="input-group pull-right">
+
+
+                        <select class="form-control select2" id='monitorpos'>
+                            <option>凌水码头监测点1号</option>
+                            <option>凌水码头监测点2号</option>
+                        </select>
+
+                        <button type="button" class="btn btn-default pull-right" id="daterange-btn">
+                    <span>
+                      <i class="fa fa-calendar"></i> 时间范围
+                    </span>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-body">
+                <div id="interactive" style="height: 500px;"></div>
+
+                <!-- /.box-body-->
+            </div>
+            <!-- /.box -->
+
+        </div>
+    </div>
+    <!-- /.row -->
+
+
+
+</section>
+<script>
+    $(function () {
+        //Initialize Select2 Elements
+        $(".select2").select2();
+        //Date range as a button
+        $('#daterange-btn').daterangepicker(
+                {
+                    ranges: {
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                        'This Month': [moment().startOf('month'), moment().endOf('month')],
+                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    },
+                    startDate: moment().subtract(29, 'days'),
+                    endDate: moment()
+                },
+                function (start, end) {
+                    $('#daterange-btn span').html(start.format('MMMM D,HH:mm') + ' - ' + end.format('MMMM D, HH:mm'));
+                }
+        );
+        $('#daterange-btn').on('apply.daterangepicker', function(ev, picker) {
+            var selectVal=$('#monitor_group').val();
+            var count=selectVal.split('-')[1];
+            init_history(count,picker);
+        });
+
+        init_history(0,null);
+        $("#monitor_group").change(group_select);
+    });
+</script>

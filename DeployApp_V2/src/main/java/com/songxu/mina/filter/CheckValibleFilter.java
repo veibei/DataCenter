@@ -10,7 +10,7 @@ import com.songxu.interfaces.Message;
  * @author songxu
  *
  */
-public class CheckValibleFilter extends  FilterImplment
+public class CheckValibleFilter extends FilterAdapter
 {
 
 	private static Logger logger=Logger.getLogger(CheckValibleFilter.class);
