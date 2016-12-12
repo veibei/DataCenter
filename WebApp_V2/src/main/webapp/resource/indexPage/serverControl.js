@@ -11,7 +11,8 @@ function changeStatus(status,time) {
         $("#status_bg").attr("class", "info-box bg-green");//设置背景色
         $("#status_ic").attr("class", "fa fa-play-circle");
         $("#status_text").html("数据中心正在运行");
-        $("#status_time").show()
+        $("#status_time").show();
+        window.randomSeed=0.5;
     }
     else {
         //停止状态
@@ -26,6 +27,7 @@ function changeStatus(status,time) {
         $("#time_Minute").html(0);
         $("#time_Second").html(0);
         $("#timeStart").html("");
+        window.randomSeed=0.2;
     }
 
 }
@@ -59,8 +61,8 @@ function displayRunTime() {
         var leave3 = leave2 % (60 * 1000) // 计算分钟数后剩余的毫秒数
         var seconds = Math.round(leave3 / 1000)
 
-        $("#time_Day").html(days+17);
-        $("#time_Hour").html(hours+10);
+        $("#time_Day").html(days);
+        $("#time_Hour").html(hours);
         $("#time_Minute").html(minutes);
         $("#time_Second").html(seconds);
 

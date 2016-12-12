@@ -62,7 +62,7 @@ function getRandomData() {
 }
 
 // setup control widget
-var updateInterval = 500;
+var updateInterval = 1000;
 $("#updateInterval").val(updateInterval).change(function () {
     var v = $(this).val();
     if (v && !isNaN(+v)) {
@@ -80,7 +80,7 @@ if ($("#realtimechart").length) {
     var options = {
 
         series: {lines: {show: 1}, lines: {show: 1}},
-        yaxis: {min: 0, max: 500},
+        yaxis: {min: 0, max: 100},
         xaxis: {min: 0, max: 9, show: false},
         colors: ["red", "green"]
     };

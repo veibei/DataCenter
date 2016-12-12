@@ -11,6 +11,7 @@ import org.hibernate.criterion.Projections;
 
 import com.songxu.bean.LogBean;
 
+
 public class LogDaoQueryImpl implements LogQueryDao
 {
 	private SessionFactory sessionFactory;

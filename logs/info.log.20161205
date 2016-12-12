@@ -1,0 +1,179 @@
+2016-12-05 09:51:17 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Mon Dec 05 09:51:17 CST 2016]; root of context hierarchy
+2016-12-05 09:51:17 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-12-05 09:51:17 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-12-05 09:51:17 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-12-05 09:51:17 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-12-05 09:51:17 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-12-05 09:51:18 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-12-05 09:51:18 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-12-05 09:51:18 [INFO] remote control established
+2016-12-05 09:51:18 [WARN] 未提供Cluster配置信息
+2016-12-05 09:51:18 [INFO]  add socketpool :pool0
+2016-12-05 09:51:18 [INFO] DefaultCache CheckService is start!
+2016-12-05 09:51:18 [INFO] DefaultCache CheckService is start!
+2016-12-05 09:51:18 [INFO]  add memcachedClient :mcClient
+2016-12-05 09:51:18 [INFO] server loading...
+2016-12-05 09:51:18 [INFO] socket service established:172.27.62.116:50116
+2016-12-05 09:51:18 [INFO] temp pool established
+2016-12-05 09:51:18 [INFO] client pool established
+2016-12-05 09:51:18 [INFO] DTU pool established
+2016-12-05 09:51:18 [INFO] receive queue established with length:100
+2016-12-05 09:51:18 [INFO] send queue established with length :100
+2016-12-05 09:51:18 [INFO] client thread pool established
+2016-12-05 09:51:18 [INFO] server receive msg switcher:true
+2016-12-05 09:51:18 [INFO] server send msg switcher:true
+2016-12-05 09:51:18 [INFO] server connction switcher:true
+2016-12-05 09:51:18 [INFO] receive queue established
+2016-12-05 09:51:18 [INFO] send queue established
+2016-12-05 09:51:18 [INFO] check queue established
+2016-12-05 09:51:18 [INFO] status check thread established
+2016-12-05 09:51:18 [INFO] status upload thread established
+2016-12-05 09:51:18 [INFO] rate data thread established
+2016-12-05 09:51:23 [INFO] server starting
+2016-12-05 09:51:23 [INFO] receive queue started...
+2016-12-05 09:51:23 [INFO] rate data upload thread started:Thread[pool-6-thread-6,5,main]
+2016-12-05 09:51:23 [INFO] status upload thread startedThread[pool-6-thread-5,5,main]
+2016-12-05 09:51:23 [INFO] DC status monitor startedThread[pool-6-thread-4,5,main]
+2016-12-05 09:51:23 [INFO] send queue thread started:Thread[pool-6-thread-2,5,main]
+2016-12-05 09:51:23 [INFO] check queue deamon thread started: Thread[pool-6-thread-3,5,main]
+2016-12-05 09:51:23 [INFO] server started
+2016-12-05 09:51:23 [INFO] Data Center start from console
+2016-12-05 10:04:05 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73a28541: startup date [Mon Dec 05 10:04:05 CST 2016]; root of context hierarchy
+2016-12-05 10:04:05 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/application.xml]
+2016-12-05 10:04:05 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/ioacceptor.xml]
+2016-12-05 10:04:05 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/remoteControl.xml]
+2016-12-05 10:04:05 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/server.xml]
+2016-12-05 10:04:06 [INFO] Loading XML bean definitions from URL [file:E:/conf/deploy_app/alimc.xml]
+2016-12-05 10:04:06 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/server.properties]
+2016-12-05 10:04:06 [INFO] Loading properties file from URL [file:E:/conf/deploy_app/remote.properties]
+2016-12-05 10:04:06 [INFO] remote control established
+2016-12-05 10:04:06 [WARN] 未提供Cluster配置信息
+2016-12-05 10:04:06 [INFO]  add socketpool :pool0
+2016-12-05 10:04:06 [INFO] DefaultCache CheckService is start!
+2016-12-05 10:04:06 [INFO] DefaultCache CheckService is start!
+2016-12-05 10:04:06 [INFO]  add memcachedClient :mcClient
+2016-12-05 10:04:06 [INFO] server loading...
+2016-12-05 10:04:06 [INFO] socket service established:172.27.62.116:50116
+2016-12-05 10:04:06 [INFO] temp pool established
+2016-12-05 10:04:06 [INFO] client pool established
+2016-12-05 10:04:06 [INFO] DTU pool established
+2016-12-05 10:04:06 [INFO] receive queue established with length:100
+2016-12-05 10:04:06 [INFO] send queue established with length :100
+2016-12-05 10:04:06 [INFO] client thread pool established
+2016-12-05 10:04:06 [INFO] server receive msg switcher:true
+2016-12-05 10:04:06 [INFO] server send msg switcher:true
+2016-12-05 10:04:06 [INFO] server connction switcher:true
+2016-12-05 10:04:06 [INFO] receive queue established
+2016-12-05 10:04:06 [INFO] send queue established
+2016-12-05 10:04:06 [INFO] check queue established
+2016-12-05 10:04:06 [INFO] status check thread established
+2016-12-05 10:04:06 [INFO] status upload thread established
+2016-12-05 10:04:06 [INFO] rate data thread established
+2016-12-05 10:04:09 [INFO] server starting
+2016-12-05 10:04:09 [INFO] receive queue started...
+2016-12-05 10:04:09 [INFO] server started
+2016-12-05 10:04:09 [INFO] status upload thread startedThread[pool-6-thread-5,5,main]
+2016-12-05 10:04:09 [INFO] rate data upload thread started:Thread[pool-6-thread-6,5,main]
+2016-12-05 10:04:09 [INFO] DC status monitor startedThread[pool-6-thread-4,5,main]
+2016-12-05 10:04:09 [INFO] send queue thread started:Thread[pool-6-thread-2,5,main]
+2016-12-05 10:04:09 [INFO] check queue deamon thread started: Thread[pool-6-thread-3,5,main]
+2016-12-05 10:04:10 [INFO] Data Center start from console
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18327
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18336
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18335
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18334
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18333
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18342
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18332
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18331
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18330
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18329
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18328
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18338
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18339
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18340
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18341
+2016-12-05 10:05:00 [INFO] DTU connetion established: 2697d14739043215
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18345
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18343
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18344
+2016-12-05 10:05:00 [INFO] DTU connetion established: 212c052a1ff24069
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18337
+2016-12-05 10:05:00 [INFO] DTU connetion established: 23ad1c833e614127
+2016-12-05 10:05:00 [INFO] connetion established：172.27.62.116:18346
+2016-12-05 10:05:00 [INFO] DTU connetion established: 25ab712ce70d8789
+2016-12-05 10:05:01 [INFO] DTU connetion established: 2e1668a9ac9d1827
+2016-12-05 10:05:01 [INFO] DTU connetion established: 2978dd10f3903415
+2016-12-05 10:05:01 [INFO] DTU connetion established: 28ac0b8f562f4640
+2016-12-05 10:05:01 [INFO] DTU connetion established: 2f3ed140b36d8256
+2016-12-05 10:05:01 [INFO] DTU connetion established: 2159c60570718294
+2016-12-05 10:05:01 [INFO] DTU connetion established: 2e4f47ca1ce39714
+2016-12-05 10:05:01 [INFO] DTU connetion established: 290664894ba87595
+2016-12-05 10:05:01 [INFO] DTU connetion established: 27a4d84b544f8111
+2016-12-05 10:05:01 [INFO] DTU connetion established: 2452d16d7bc61119
+2016-12-05 10:05:01 [INFO] DTU connetion established: 22054155eb572183
+2016-12-05 10:05:01 [INFO] DTU connetion established: 23d81def8ff23034
+2016-12-05 10:05:01 [INFO] DTU connetion established: 2cb19ebe5ac11707
+2016-12-05 10:05:01 [INFO] DTU connetion established: 29f7da08d5da8370
+2016-12-05 10:05:01 [INFO] DTU connetion established: 2de31b0e7ae12801
+2016-12-05 10:05:01 [INFO] DTU connetion established: 2f591ac235b66737
+2016-12-05 10:05:01 [INFO] DTU connetion established: 2adb7eec87ab9202
+2016-12-05 10:05:09 [INFO] remote control connetion established:172.27.62.116:18362
+2016-12-05 10:05:29 [INFO] connetion established：172.27.62.116:18407
+2016-12-05 10:05:29 [INFO] connetion established：172.27.62.116:18411
+2016-12-05 10:05:29 [INFO] connetion established：172.27.62.116:18410
+2016-12-05 10:05:29 [INFO] connetion established：172.27.62.116:18409
+2016-12-05 10:05:29 [INFO] connetion established：172.27.62.116:18408
+2016-12-05 10:05:29 [INFO] Client connection established:32a53f493e484237
+2016-12-05 10:05:29 [INFO] Client connection established:3232bf7460ed2592
+2016-12-05 10:05:29 [INFO] Client connection established:38fcb643c8349957
+2016-12-05 10:05:29 [INFO] Client connection established:349bdac3ea368085
+2016-12-05 10:05:29 [INFO] Client connection established:378f7623201a6441
+2016-12-05 10:06:32 [INFO] connection closed：172.27.62.116:18411
+2016-12-05 10:06:32 [INFO] connection closed：172.27.62.116:18410
+2016-12-05 10:06:32 [INFO] connection closed：172.27.62.116:18409
+2016-12-05 10:06:32 [INFO] connection closed：172.27.62.116:18407
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18327
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18335
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18330
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18333
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18334
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18332
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18331
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18329
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18328
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18338
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18340
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18341
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18343
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18342
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18339
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18344
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18336
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18337
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18345
+2016-12-05 10:06:34 [INFO] connection closed：172.27.62.116:18346
+2016-12-05 10:06:35 [INFO] DTU connection closed：290664894ba87595
+2016-12-05 10:06:35 [INFO] DTU connection closed：2f591ac235b66737
+2016-12-05 10:06:35 [INFO] DTU connection closed：25ab712ce70d8789
+2016-12-05 10:06:35 [INFO] DTU connection closed：2de31b0e7ae12801
+2016-12-05 10:06:35 [INFO] DTU connection closed：212c052a1ff24069
+2016-12-05 10:06:35 [INFO] DTU connection closed：2452d16d7bc61119
+2016-12-05 10:06:35 [INFO] DTU connection closed：28ac0b8f562f4640
+2016-12-05 10:06:35 [INFO] DTU connection closed：2159c60570718294
+2016-12-05 10:06:35 [INFO] DTU connection closed：23d81def8ff23034
+2016-12-05 10:06:35 [INFO] DTU connection closed：2cb19ebe5ac11707
+2016-12-05 10:06:35 [INFO] DTU connection closed：2f3ed140b36d8256
+2016-12-05 10:06:35 [INFO] DTU connection closed：29f7da08d5da8370
+2016-12-05 10:06:35 [INFO] DTU connection closed：2e1668a9ac9d1827
+2016-12-05 10:06:35 [INFO] DTU connection closed：27a4d84b544f8111
+2016-12-05 10:06:35 [INFO] DTU connection closed：2e4f47ca1ce39714
+2016-12-05 10:06:35 [INFO] DTU connection closed：22054155eb572183
+2016-12-05 10:06:35 [INFO] DTU connection closed：2978dd10f3903415
+2016-12-05 10:06:35 [INFO] DTU connection closed：2697d14739043215
+2016-12-05 10:06:35 [INFO] DTU connection closed：2adb7eec87ab9202
+2016-12-05 10:06:35 [INFO] DTU connection closed：23ad1c833e614127
+2016-12-05 10:06:35 [INFO] Client connection closed：32a53f493e484237
+2016-12-05 10:06:35 [INFO] Client connection closed：3232bf7460ed2592
+2016-12-05 10:06:35 [INFO] Client connection closed：349bdac3ea368085
+2016-12-05 10:06:35 [INFO] Client connection closed：38fcb643c8349957

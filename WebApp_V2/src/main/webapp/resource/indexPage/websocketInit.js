@@ -19,7 +19,7 @@ var dtuCountArr =
 webSocket.onerror = function (event) {
     onError(event)
 };
-
+window.randomSeed=0.2;//随机数种子
 webSocket.onopen = function (event) {
     // 会话打开时 初始化四个数组 内容全部为0
     for (var i = 0; i < 10; i++) {
@@ -43,18 +43,27 @@ function onMessage(event) {
     // 表示发送的是动态信息
     if (msgRev.substring(0, 1) == "i") {
         var subArray = msgRev.split("|");
-        var receiveSpeed = (subArray[1]>0?subArray[1]:230.56+ Math.random() * 10);
-        var sendSpeed = (subArray[2]>0?subArray[2]:360.52+Math.random() * 10);
+        var receiveSpeed = parseFloat(subArray[1]);//(subArray[1]>0?subArray[1]:230.56+ Math.random() * 10);
+        var sendSpeed =parseFloat(subArray[2]);// (subArray[2]>0?subArray[2]:360.52+Math.random() * 10);
         var receiveRate = subArray[3];
         var sendRate = subArray[4];
-        var clientCount = (subArray[5]==0?340:subArray[5]);
-        var DTUCount = (subArray[6]==0?780:subArray[6]);
-
+        var clientCount = parseInt(subArray[5]);//(subArray[5]==0?340:subArray[5]);
+        var DTUCount = parseInt(subArray[6]);//(subArray[6]==0?780:subArray[6]);
+        var allCount=clientCount+DTUCount;
         $("#rSpeed").text(receiveSpeed.toFixed(3));
         $("#sSpeed").text(sendSpeed.toFixed(3));
 
         $("#count_dtu").text(DTUCount);
         $("#count_client").text(clientCount);
+
+        //改变页面数量
+        $("#dtu_per").attr("style","width:"+DTUCount+"%");
+        $("#client_per").attr("style","width:"+clientCount+"%");
+        if(allCount>10) {
+            window.randomSeed=0.6;
+        }else if(allCount>30) {
+            window.randomSeed=0.8;
+        }
 
         // 设置数组曲线的值 移除第一个 在末尾放入
         sendSpeedArr.splice(0, 1);
@@ -97,35 +106,6 @@ function onMessage(event) {
     else if (msgRev.substring(0, 1) == "s") {
         var status = msgRev.substring(1, 2);
         changeStatus(status,msgRev.substring(2, msgRev.length));
-        if (status == 1) {
-            
-
-        }
-        /*var hiddenStatus = $("#stautsHidden");
-         hiddenStatus.attr("text", status);
-         if (status == 1) {
-         //运行状态
-         $("#status_bg").attr("class", "info-box bg-green");//设置背景色
-         $("#status_ic").attr("class", "fa fa-play-circle");
-         $("#status_text").html("正在运行");
-         //向隐藏域中写入启动时间  目的为了显示服务器启动时间
-         $("#timeStart").attr("text", (msgRev.substring(2, msgRev.length)));
-         }
-         else {
-         //停止状态
-         $("#status_bg").attr("class", "info-box bg-red");//设置背景色
-         $("#status_ic").attr("class", "fa fa-stop");
-         $("#status_text").html("已停止");
-
-         //把服务器启动时间清零
-
-         $("#time_Day").html(0);
-         $("#time_Hour").html(0);
-         $("#time_Minute").html(0);
-         $("#time_Second").html(0);
-         $("#timeStart").html("");
-         }*/
-
     }
 }
 
@@ -153,36 +133,29 @@ function getReceiveSpeedData() {
             [i, receiveSpeedArr[i]])
     return res;
 }
+
 var CPUdata = [];//CPU数据
 function getCPUData() {
     if (CPUdata.length > 0)
         CPUdata = CPUdata.slice(1);
-    while (CPUdata.length < 100) {
-        var y = 30 + Math.random() * 10;
+    while (CPUdata.length < 10) {
+        var y = 40*window.randomSeed + Math.random() * 10;
         CPUdata.push(y);
     }
-
-    var res =
-        [];
+    var res = [];
     for (var i = 0; i < CPUdata.length; ++i)
-        res.push(
-            [i, CPUdata[i]])
+        res.push([i, CPUdata[i]])
     return res;
 }
-var Memdata = [];//CPU数据
+var Memdata = [];//内存数据
 function getMemData() {
-
     if (Memdata.length > 0)
         Memdata = Memdata.slice(1);
-    while (Memdata.length < 100) {
-
-        y = 70 + Math.random() * 10;
-
+    while (Memdata.length < 10) {
+        y = 70*window.randomSeed + Math.random() * 10;
         Memdata.push(y);
     }
-
-    var res =
-        [];
+    var res = [];
     for (var i = 0; i < Memdata.length; ++i)
         res.push(
             [i, Memdata[i]])
