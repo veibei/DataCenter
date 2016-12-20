@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 import java.util.UUID;
 
 import org.apache.mina.core.session.IoSession;
@@ -37,9 +38,9 @@ public class Communicate {
 	}
 
 	public String randomMsg() {
-		UUID uuid = UUID.randomUUID();
-//		return uuid.toString().replaceAll("-", "");
-		return"23";
+		Random random=new Random();
+		Double data=200+random.nextDouble()*200;
+		return data.intValue()+"";
 	}
 
 	private int communicated=1;
@@ -51,14 +52,14 @@ public class Communicate {
 			{
 				for (String string : imei_To) {
 					Message message=new MessageImpl("C1", this.imei, string,
-							randomMsg());
+							"P");
 					session.write(message);
 					communicated++;
 				}
 			}
 			else {
 				Message message=new MessageImpl("C1", this.imei, imei_F,
-						randomMsg());
+						"P");
 				session.write(message);
 			}
 			

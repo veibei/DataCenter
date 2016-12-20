@@ -49,6 +49,7 @@ public class MinaClientHanlder extends IoHandlerAdapter {
 		}
 		else {
 			Main.txtLog.append(messageR.getIMEI_T()+":收到来自|"+messageR.getIMEI_F()+"|消息："+messageR.getMsg()+"\n========================\n");
+			Main.scrollAndSetCursor();
 			record.recordRev(messageR.getIMEI_T());
 			allCommunicator.get(messageR.getIMEI_T()).sendMsg(session, messageR.getIMEI_F());
 			record.recordSend(messageR.getIMEI_F());

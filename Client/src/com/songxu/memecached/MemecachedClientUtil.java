@@ -4,23 +4,13 @@ import com.danga.MemCached.MemCachedClient;
 import com.danga.MemCached.SockIOPool;
 
 public final class MemecachedClientUtil {
-	/*private static MemcachedClient client;
-	static {
-		try {
-			client = new MemcachedClient(new InetSocketAddress("172.20.202.92",
-					50120));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}*/
 	
 	 private static MemCachedClient client = new MemCachedClient();
      
 	    static {
 	        //创建Socket连接池实例
 	        SockIOPool spool = SockIOPool.getInstance();        
-	        String[] servers = {"172.20.202.33:50120"};
+	        String[] servers = {"172.27.62.116:50120"};
 	        Integer[] weights = {3};        
 	        //设置服务器信息
 	        spool.setServers(servers);
