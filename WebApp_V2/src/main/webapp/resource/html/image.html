@@ -2,15 +2,13 @@
 
 </style>
 <!--flot-->
-<script src="resource/common/js/jquery.flot.min.js"></script>
-<script src="resource/common/js/jquery.flot.time.min.js"></script>
-<script src="resource/realtime/monitor.js"></script>
+<script src="resource/img/img.js"></script>
 
 <section class="content-header">
 
     <h1>
-        实时监测
-        <small> realtime monitor data</small>
+        监测图片管理
+        <small> monitor image</small>
     </h1>
     <ol class="breadcrumb">
         <li>请选择监测组：
@@ -25,23 +23,22 @@
 </section>
 <section class="content">
 
-    <div id="alert_box" class="alert alert-danger alert-dismissible" style="display: none">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-        <h4><i class="icon fa fa-ban"></i> 警告!</h4>
-        <p id="alert_text">凌水码头一号监测点报警！</p>
-    </div>
-
-
     <div class="row" id="monitorData">
+        <div class="box">
+            <div class="box-body col-md-4" ng-repeat="img in imgArr">
+                <img class="img-responsive pad" style="height: 300px;width: 100%" src="img/monitor/{{img}}.jpg" alt="Photo">
+                <p style="margin-left: 35%">凌水码头一号监测点</p>
+                <p style="margin-left: 25%">{{imgDate[$index]}}</p>
+            </div>
+        </div>
     </div>
 </section>
 
 <script>
-    window.alarm=false;
     $(function () {
         $("#monitor_group").change(group_select);
-        group_select();
-        setTimeout(show,1000);
+        //group_select();
+        //setTimeout(show,1000);
     });
     Date.prototype.Format = function (fmt) { //author: meizz
         var o = {
@@ -59,9 +56,10 @@
         return fmt;
     }
     function show() {
-        window.alarm=true;
-        var date=new Date().Format("yyyy-MM-dd hh:mm:ss");;
-        $("#alert_text").html(date+" 凌水码头一号监测点报警！");
+        window.alarm = true;
+        var date = new Date().Format("yyyy-MM-dd hh:mm:ss");
+        ;
+        $("#alert_text").html(date + " 凌水码头一号监测点报警！");
         $("#alert_box").slideDown("slow");
     }
 </script>

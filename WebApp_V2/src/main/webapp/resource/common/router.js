@@ -36,6 +36,10 @@ angular.module("dtucenter").config(['$routeProvider',function ($routeProvider) {
             templateUrl: 'resource/html/history.html',
             controller: 'historyController'
         })
+        .when('/img', {
+            templateUrl: 'resource/html/image.html',
+            controller: 'imageController'
+        })
         .otherwise({
             redirectTo: '/main'
         });
