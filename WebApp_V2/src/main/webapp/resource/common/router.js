@@ -39,6 +39,15 @@ angular.module("dtucenter").config(['$routeProvider',function ($routeProvider) {
         .when('/img', {
             templateUrl: 'resource/html/image.html',
             controller: 'imageController'
+        }).when('/alarm', {
+            templateUrl: 'resource/html/alarm.html',
+            controller: 'alarmController'
+        }).when('/port', {
+            templateUrl: 'resource/html/port.html',
+            controller: 'portController'
+        }).when('/group', {
+            templateUrl: 'resource/html/group.html',
+            controller: 'groupController'
         })
         .otherwise({
             redirectTo: '/main'
