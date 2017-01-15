@@ -29,7 +29,7 @@ function getDiv(company, name) {
         '<a href="#">监测点位置 <span class="badge bg-blue">大连海事大学凌水码头</span></a>'+
         '</li> <li><a href="#">当前报警阈值 <span class="badge bg-blue">725</span></a></li>'+
         '</li> <li><a href="#">当前荧光值 <span class="badge bg-red">746</span></a></li>'+
-        '</li> <li><a href="#">最后通信时间<span class="badge bg-blue">2017-1-15 10:23:04</span></a></li>'+
+        '</li> <li><a href="#">最后通信时间<span class="badge bg-blue">2016-1-15 10:23:04</span></a></li>'+
         '<li><a href="#">负责人 <span class="badge bg-blue">张三</span></a></li>'+
         '<li><a href="#">联系电话 <span class="badge bg-blue">13900001111</span></a></li>'+
         '<li><a href="#">最近五天报警 <span class=" badge bg-red">3次</span></a></li> </ul>'+
