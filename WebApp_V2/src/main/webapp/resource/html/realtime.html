@@ -65,7 +65,8 @@
     function show() {
         window.alarm=true;
         var date=new Date().Format("yyyy-MM-dd hh:mm:ss");;
-        $("#alert_text").html("2016年09月02日 15:32:28 凌水码头一号监测点报警！");
+        $("#alert_text").html(date+" 凌水码头一号监测点报警！");
+        $("#alarm_time").attr("value",date)
         $("#alert_box").slideDown("slow");
     }
 </script>

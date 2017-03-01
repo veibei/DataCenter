@@ -92,9 +92,22 @@ angular.module("dtucenter").controller('alarmController', ['$scope', '$rootScope
         $scope.rowsCount = data.rowsCount;//所有的记录数
     }
     var init = function () {
+        var alarmTime = $("#alarm_time").attr("value");
+        //alert(alarmTime);
+        var displayData=getdata();
+        displayData[0]={
+            'a':alarmTime,
+            'b':'凌水码头一号监测点',
+            'c':'大连海事大学凌水码头',
+            'd':'754',
+            'e':'670',
+            'f':'未处理'
+        }
+
+
         $scope.currentPage = 1;//当前页码
         $scope.listBtn = [1];//按钮标号 1,2..10
-        $scope.rowData = getdata();//当前页面展示的数据
+        $scope.rowData = displayData;//当前页面展示的数据
         $scope.pageCount = 1;//所有的页数
         $scope.perPageCount = 10;//每页的数量
         $scope.rowsCount = 5;//所有的记录数
