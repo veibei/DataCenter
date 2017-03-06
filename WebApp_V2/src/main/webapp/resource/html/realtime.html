@@ -45,7 +45,7 @@
     $(function () {
         $("#monitor_group").change(group_select);
         group_select();
-        setTimeout(show,1000);
+        setTimeout(show,3000);
     });
     Date.prototype.Format = function (fmt) { //author: meizz
         var o = {
@@ -64,7 +64,8 @@
     }
     function show() {
         window.alarm=true;
-        var date=new Date().Format("yyyy-MM-dd hh:mm:ss");;
+        var date=new Date().Format("yyyy-MM-dd hh:mm:ss");
+        var datestr="2016-09-02 15:32:28"
         $("#alert_text").html(date+" 凌水码头一号监测点报警！");
         $("#alarm_time").attr("value",date)
         $("#alert_box").slideDown("slow");
