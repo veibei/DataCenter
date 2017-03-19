@@ -7,6 +7,25 @@
     <version>2.0-SNAPSHOT</version>
     <name>DTUCenterManager</name>
     <url>http://maven.apache.org</url>
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <db.jdbcUrl>jdbc:mysql://172.27.48.230:3306/test</db.jdbcUrl>
+                <db.username>admin</db.username>
+                <db.password>admin</db.password>
+            </properties>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <db.jdbcUrl>jdbc:mysql://localhost:3306/test</db.jdbcUrl>
+                <db.username>root</db.username>
+                <db.password>******</db.password>
+            </properties>
+        </profile>
+    </profiles>
+
     <properties>
         <springframework-version>4.2.6.RELEASE</springframework-version>
     </properties>
@@ -265,6 +284,13 @@
     <build>
 
         <finalName>DCM</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
 
